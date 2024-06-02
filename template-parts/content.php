@@ -16,7 +16,7 @@
 				<a href="<?= esc_url( get_permalink() );?>" rel="bookmark">
 					<div class="grid-x grid-padding-x">
 						<div class="cell small-12 medium-6">
-							<?php the_post_thumbnail(); ?>
+							<?php the_post_thumbnail('full'); ?>
 						</div>
 						<div class="entry-header cell small-12 medium-6">
 							<div class="date weight-medium small-14">

@@ -23,31 +23,28 @@ $posts_page_id = get_option('page_for_posts');
 				<div class="cell small-12 tablet-10 large-8">
 
 					<?php
-					if ( have_posts() ) :
-						
-						// Fetch all categories except for Uncategorized and hide empty ones
-						$categories = get_categories( array(
-							'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
-							'hide_empty' => 1,
-						) );
-						
-						// Check if categories exist
-						if ( !empty( $categories ) ) {
-							echo '<ul class="menu horizontal">';
-							foreach ( $categories as $category ) {
-								echo '<li><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a></li>';
-							}
-							echo '</ul>';
-						}
-
-			
-						if ( is_home() && ! is_front_page() ) :
-							?>
-							<header>
-								<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-							</header>
+					if ( have_posts() ) :?>
+						<header>
+							<h1 class="page-title color-dark-green"><?php single_post_title(); ?></h1>
 							<?php
-						endif;
+							// Fetch all categories except for Uncategorized and hide empty ones
+							$categories = get_categories( array(
+								'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
+								'hide_empty' => 1,
+							) );
+							
+							// Check if categories exist
+							if ( !empty( $categories ) ) {
+								echo '<ul class="cat-links no-bullet grid-x grid-padding-x">';
+								foreach ( $categories as $category ) {
+									echo '<li class="cell shrink"><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a></li>';
+								}
+								echo '</ul>';
+							}?>
+	
+
+						</header>
+							<?php
 			
 						/* Start the Loop */
 						while ( have_posts() ) :
@@ -62,14 +59,14 @@ $posts_page_id = get_option('page_for_posts');
 			
 						endwhile;
 			
-						the_posts_navigation();
-			
 					else :
 			
 						get_template_part( 'template-parts/content', 'none' );
 			
 					endif;
 					?>
+					
+					<?php trailhead_page_navi();?>
 					
 				</div>
 			</div>

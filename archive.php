@@ -17,27 +17,28 @@ $queried_object = get_queried_object();
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x align-center">
 				<div class="cell small-12 tablet-10 large-8">
-
-					<?php if ( have_posts() ) : 
-						
-						$categories = get_categories( array(
-							'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
-							'hide_empty' => 1,
-						) );
-						
-						// Check if categories exist
-						if ( !empty( $categories ) ) {
-							echo '<ul class="menu horizontal">';
-							foreach ( $categories as $category ) {
-								echo '<li><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a></li>';
-							}
-							echo '</ul>';
-						}
-							
-					?>
 			
 						<header class="page-header">
-							<h1><?=$queried_object->name;?></h1>
+							<h1 class="color-dark-green"><?=$queried_object->name;?></h1>
+							
+							<?php if ( have_posts() ) : 
+								
+								$categories = get_categories( array(
+									'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
+									'hide_empty' => 1,
+								) );
+								
+								// Check if categories exist
+								if ( !empty( $categories ) ) {
+									echo '<ul class="cat-links no-bullet grid-x grid-padding-x">';
+									foreach ( $categories as $category ):?>
+										<li class="cell shrink"><a<?php if( $queried_object->term_id == $category->term_id ):?> class="active"<?php endif;?> href="<?= esc_url( get_category_link( $category->term_id ) );?>"><?=esc_html( $category->name );?></a></li>
+									<?php endforeach;
+									echo '</ul>';
+								}
+									
+							?>
+							
 						</header><!-- .page-header -->
 			
 						<?php
@@ -54,14 +55,14 @@ $queried_object = get_queried_object();
 			
 						endwhile;
 			
-						the_posts_navigation();
-			
 					else :
 			
 						get_template_part( 'template-parts/content', 'none' );
 			
 					endif;
 					?>
+					
+					<?php trailhead_page_navi();?>
 
 				</div>
 			</div>
