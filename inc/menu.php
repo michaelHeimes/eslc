@@ -4,7 +4,8 @@ register_nav_menus(
 	array(
 		'main-nav'		=> __( 'The Main Menu', 'trailhead' ),		// Main nav in header
 		'offcanvas-nav'	=> __( 'The Off-Canvas Menu', 'trailhead' ),	// Off-Canvas nav
-		'footer-links'	=> __( 'Footer Links', 'trailhead' ),		// Secondary nav in footer
+		'utility-nav'		=> __( 'The Utility Menu', 'trailhead' ),		// Utility nav in header and footer
+		'footer-links'	=> __( 'Footer Menu', 'trailhead' ),		// Secondary nav in footer
 		'social-links'	=> __( 'Social Links', 'trailhead' ),		// Social Nav
 	)
 );
@@ -55,12 +56,24 @@ class Off_Canvas_Menu_Walker extends Walker_Nav_Menu {
 	}
 }
 
+// The Social Links Menu
+function trailhead_utility_nav() {
+	wp_nav_menu(array(
+		'container'			=> 'false',				// Remove nav container
+		'menu_id'			=> 'utility-nav',		// Adding custom nav id
+		'menu_class'		=> 'menu utility-nav',				// Adding custom nav class
+		'theme_location'	=> 'utility-nav',		// Where it's located in the theme
+		'depth'				=> 0,					// Limit the depth of the nav
+		'fallback_cb'		=> ''					// Fallback function
+	));
+} /* End Social Links Menu */
+
 // The Footer Menu
 function trailhead_footer_links() {
 	wp_nav_menu(array(
 		'container'			=> 'false',				// Remove nav container
 		'menu_id'			=> 'footer-links',		// Adding custom nav id
-		'menu_class'		=> 'menu',				// Adding custom nav class
+		'menu_class'		=> 'menu vertical',				// Adding custom nav class
 		'theme_location'	=> 'footer-links',		// Where it's located in the theme
 		'depth'				=> 0,					// Limit the depth of the nav
 		'fallback_cb'		=> ''					// Fallback function
@@ -72,7 +85,7 @@ function trailhead_social_links() {
 	wp_nav_menu(array(
 		'container'			=> 'false',				// Remove nav container
 		'menu_id'			=> 'social-links',		// Adding custom nav id
-		'menu_class'		=> 'menu',				// Adding custom nav class
+		'menu_class'		=> 'menu social-links',				// Adding custom nav class
 		'theme_location'	=> 'social-links',		// Where it's located in the theme
 		'depth'				=> 0,					// Limit the depth of the nav
 		'fallback_cb'		=> ''					// Fallback function
@@ -113,30 +126,7 @@ add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
 		
 		// var_dump($args);
 		
-		if ( $args->theme_location == 'region-nav') {
-		
-			// loop
-			foreach( $items as &$item ) {
-				
-				// vars
-				$icon = get_field('region_badge', $item);
-				$size = 'full';						
-				// append icon
-				if( $icon ) {
-					
-					$item->title = '<span class="icon-title-wrap grid-x flex-dir-column align-middle align-center"><span class="icon" aria-hidden="true"><img src="' . $icon['url'] . '" alt="' . $icon['alt'] . '"></span><span class="title">' . $item->title . '</span></span>';
-					
-				}
-				
-			}
-			
-						
-			// return
-			return $items;		
-			
-		}
-			
-		elseif ( $args->theme_location == 'social-links') {
+	if ( $args->theme_location == 'social-links') {
 			
 			// loop
 			foreach( $items as &$item ) {

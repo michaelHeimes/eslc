@@ -13,15 +13,33 @@
  */
 
 get_header();
+$posts_page_id = get_option('page_for_posts');
 ?>
 
 	<main id="primary" class="site-main">
+		<?php echo get_the_post_thumbnail( $posts_page_id, 'full' );?>
 		<div class="grid-container">
-			<div class="grid-x grid-padding-x">
-				<div class="cell small-12">
+			<div class="grid-x grid-padding-x align-center">
+				<div class="cell small-12 tablet-10 large-8">
 
 					<?php
 					if ( have_posts() ) :
+						
+						// Fetch all categories except for Uncategorized and hide empty ones
+						$categories = get_categories( array(
+							'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
+							'hide_empty' => 1,
+						) );
+						
+						// Check if categories exist
+						if ( !empty( $categories ) ) {
+							echo '<ul class="menu horizontal">';
+							foreach ( $categories as $category ) {
+								echo '<li><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a></li>';
+							}
+							echo '</ul>';
+						}
+
 			
 						if ( is_home() && ! is_front_page() ) :
 							?>

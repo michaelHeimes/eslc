@@ -1,39 +1,78 @@
 footer#colophon {
-
+	background-color: $color-dark-green;
+	color: $white;
+	a {
+		color: $white;
+	}
 	.site-info {
 
 	}
 	
 	.left {
+		padding-bottom: 1.9rem;
 		.bottom {
-			@include breakpoint(medium down) {
-				padding-bottom: 4.1rem;
-			}
+			padding-top: 5rem;
 		}
 	}
 		
 	ul#footer-links {
-		@include breakpoint(medium down) {
-			padding-bottom: 4.08rem;
-		}
+		padding-bottom: 2rem;
 		li {
+			margin-bottom: 1.21rem;
 			a {
-				font-size: rem-calc(14);
-				line-height: rem-calc(19);
-				font-weight: bold;
-				text-transform: uppercase;
+				font-size: rem-calc(18);
+				color: $white;
+				line-height: 1;
+				font-weight: 500;
+				padding: 0;
 			}
 		}
 	}
 	
-	.copyright {
-		margin-bottom: 0;
-		@include breakpoint(medium down) {
-			text-align: center;
+	.donate-link-wrap {
+		padding-bottom: 2.98rem;
+	}
+	
+	.utility-nav {
+		flex-direction: column;
+		>li {
+			margin: 0 0 1.15rem;
+		
+			> a {
+				font-family: $font-header;
+				font-size: rem-calc(14);
+				color: $white;
+				text-transform: uppercase;
+				letter-spacing: .07em;
+				padding: 0;				
+			&:hover {
+			
+			}
+				
+			}	
 		}
-		@include breakpoint(tablet) {
-			br {
-				display: none;
+	}
+	
+	.social-links {
+		>li {
+			margin: 0 2rem 2rem 0;
+		
+			> a {
+
+				padding: 0;				
+			&:hover {
+			
+			}
+				
+			}	
+		}
+	}
+	
+	.a-logos {
+		.img-wrap {
+			margin-bottom: $smallGutter;
+			@include breakpoint(medium) {
+				margin-bottom: $mediumGutter;
 			}
 		}
 	}

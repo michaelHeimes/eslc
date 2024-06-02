@@ -31,6 +31,15 @@ svg {
 	position: relative;
 }
 
+button,
+.button {
+	margin: 0;
+	&.tan {
+		background-color: $color-tan;
+		color: $color-dark-brown;
+	}
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/

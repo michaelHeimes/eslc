@@ -10,54 +10,26 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				trailhead_posted_on();
-				trailhead_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php trailhead_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'trailhead' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'trailhead' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php trailhead_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	<div class="grid-x grid-padding-x">
+		<div class="cell small-12">
+			<div class="inner">
+				<a href="<?= esc_url( get_permalink() );?>" rel="bookmark">
+					<div class="grid-x grid-padding-x">
+						<div class="cell small-12 medium-6">
+							<?php the_post_thumbnail(); ?>
+						</div>
+						<div class="entry-header cell small-12 medium-6">
+							<div class="date weight-medium small-14">
+								<?php echo get_the_date('F j, Y'); ?>
+							</div>
+							<h2 class="entry-title h3">
+								<span><?php the_title();?></span>
+							</h2>
+							<svg width="9" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 8.644c0 .18-.029.348-.086.504-.066.168-.167.32-.296.444L1.9 16.322a1.086 1.086 0 0 1-.78.318 1.056 1.056 0 0 1-.796-.318A1.076 1.076 0 0 1 0 15.534c0-.31.108-.572.325-.79l6.088-6.1-6.088-6.1a1.086 1.086 0 0 1-.318-.781c-.01-.3.106-.592.318-.797.21-.214.493-.332.787-.326.309 0 .572.109.788.326l6.718 6.73c.14.14.238.288.296.444.058.156.086.324.086.504Z" fill="#476882"/></svg>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</article>

@@ -33,14 +33,14 @@
 
 // Accordian
 //@*prepros-prepend vendor/foundation/js/plugins/foundation.accordion.js
-//@*prepros-prepend vendor/foundation/js/plugins/foundation.accordionMenu.js
+//@prepros-prepend vendor/foundation/js/plugins/foundation.accordionMenu.js
 //@*prepros-prepend vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js
 
 // Menu enhancements
-//@*prepros-prepend vendor/foundation/js/plugins/foundation.drilldown.js
-//@*prepros-prepend vendor/foundation/js/plugins/foundation.dropdown.js
-//@*prepros-prepend vendor/foundation/js/plugins/foundation.dropdownMenu.js
-//@*prepros-prepend vendor/foundation/js/plugins/foundation.responsiveMenu.js
+//@prepros-prepend vendor/foundation/js/plugins/foundation.drilldown.js
+//@prepros-prepend vendor/foundation/js/plugins/foundation.dropdown.js
+//@prepros-prepend vendor/foundation/js/plugins/foundation.dropdownMenu.js
+//@prepros-prepend vendor/foundation/js/plugins/foundation.responsiveMenu.js
 //@*prepros-prepend vendor/foundation/js/plugins/foundation.responsiveToggle.js
 
 // Equalize heights
@@ -80,7 +80,7 @@
 //@prepros-prepend vendor/what-input.js
 
 // Swiper
-//@prepros-prepend vendor/swiper-bundle.js
+//@*prepros-prepend vendor/swiper-bundle.js
 
 // DOM Ready
 (function($) {
