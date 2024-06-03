@@ -1,17 +1,20 @@
 footer#colophon {
+	padding-top: rem-calc(66);
 	background-color: $color-dark-green;
 	color: $white;
-	a {
+	a:not(.button) {
 		color: $white;
 	}
-	.site-info {
-
+	.logo-wrap {
+		margin-bottom: rem-calc(44);
 	}
 	
 	.left {
 		padding-bottom: 1.9rem;
 		.bottom {
-			padding-top: 5rem;
+			@include breakpoint(medium) {
+				padding-top: 5rem;
+			}
 		}
 	}
 		
@@ -31,6 +34,9 @@ footer#colophon {
 	
 	.donate-link-wrap {
 		padding-bottom: 2.98rem;
+		@include breakpoint(small down) {
+			padding-top: 2.4rem;
+		}
 	}
 	
 	.utility-nav {
@@ -56,14 +62,15 @@ footer#colophon {
 	.social-links {
 		>li {
 			margin: 0 2rem 2rem 0;
+			display: inline-flex;
+			align-items: center;
 		
 			> a {
-
-				padding: 0;				
-			&:hover {
-			
-			}
-				
+				padding: 0;		
+				transition: opacity .25s ease;
+				&:hover {
+					opacity: .5;
+				}				
 			}	
 		}
 	}

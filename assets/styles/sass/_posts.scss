@@ -1,5 +1,8 @@
 .blog,
 .archive {
+	main {
+		padding-bottom: 3.28rem;
+	}
 	h1 {
 		margin-bottom: 1.64em;
 	}
@@ -22,13 +25,36 @@
 	}
 	.page-navigation {
 		li {
+			display: inline-flex;
+			align-items: center;
+			margin: .5rem;
 			a {
 				text-decoration: underline;
-				&.prev {
-					svg {
-						transform: rotate(180deg);
-					}
-				}	
+			}
+			span,
+			a {
+				padding: .2em;
+			}
+			a.prev,
+			span.prev,
+			&.prev {
+				svg {
+					transform: rotate(180deg);
+				}
+			}	
+
+			a {
+				&.prev,
+				&.next {
+					display: inline-flex;
+					align-items: center;
+				}
+			}	
+			span.prev,
+			span.next {
+				display: inline-flex;
+				align-items: center;
+				opacity: 24.85%;
 			}
 		}
 	}
@@ -36,6 +62,9 @@
 
 article.post {
 	margin-bottom: rem-calc(40);	
+	&:last-of-type {
+		margin-bottom: 1.75rem;
+	}
 	a {
 		color: $color-brown;
 		.entry-header {

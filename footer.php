@@ -28,6 +28,11 @@
 										<?php if(wp_get_nav_menu_items(get_nav_menu_locations()['footer-links'])): ?>
 											<div class="cell small-12 medium-shrink">
 												<?php trailhead_footer_links();?>
+												<?php if(wp_get_nav_menu_items(get_nav_menu_locations()['utility-nav'])): ?>
+													<div class="hide-for-medium">
+														<?php trailhead_utility_nav();?>
+													</div>
+												<?php endif;?>
 												<?php 
 												$link = get_field('donate_link', 'option');
 												if( $link ): 
@@ -45,7 +50,7 @@
 											</div>
 										<?php endif;?>
 										<?php if(wp_get_nav_menu_items(get_nav_menu_locations()['utility-nav'])): ?>
-											<div class="cell small-12 medium-auto">
+											<div class="cell small-12 medium-auto show-for-medium">
 												<?php trailhead_utility_nav();?>
 											</div>
 										<?php endif;?>
