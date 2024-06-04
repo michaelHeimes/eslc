@@ -687,7 +687,7 @@ h6, .h6 {
   font-family: "fields", serif;
   font-style: normal;
   font-weight: normal;
-  color: inherit;
+  color: #476882;
   text-rendering: optimizeLegibility;
 }
 h1 small, .h1 small,
@@ -3905,9 +3905,9 @@ ul.no-bullet, ol.no-bullet {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
-  padding: 0.5em 0.7939em;
-  border: 1px solid transparent;
-  border-radius: 16px;
+  padding: 0.625em 1.276em;
+  border: 1px solid #476882;
+  border-radius: 38px;
   -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: inherit;
@@ -3925,10 +3925,10 @@ ul.no-bullet, ol.no-bullet {
   font-size: 0.6rem;
 }
 .button.small {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .button.large {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 .button.expanded {
   display: block;
@@ -4092,7 +4092,7 @@ ul.no-bullet, ol.no-bullet {
   top: 0.4em;
   display: inline-block;
   float: right;
-  margin-left: 0.7939em;
+  margin-left: 1.276em;
 }
 .button.dropdown.hollow::after, .button.dropdown.clear::after {
   border-top-color: #476882;
@@ -7142,10 +7142,25 @@ button,
 .button {
   margin: 0;
 }
+button:hover,
+.button:hover {
+  color: #476882;
+  background-color: #fff;
+}
+button.small,
+.button.small {
+  padding: 0.5715em 1.1645em;
+}
 button.tan,
 .button.tan {
   background-color: #C09C5B;
+  border-color: #C09C5B;
   color: #483627;
+}
+button.tan:hover,
+.button.tan:hover {
+  background-color: #483627;
+  color: #C09C5B;
 }
 
 /*********************
@@ -7210,9 +7225,9 @@ POSTS & CONTENT STYLES
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
-  padding: 0.5em 0.7939em;
-  border: 1px solid transparent;
-  border-radius: 16px;
+  padding: 0.625em 1.276em;
+  border: 1px solid #476882;
+  border-radius: 38px;
   -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: inherit;
@@ -7647,8 +7662,36 @@ ol {
   }
 }
 
+.font-header {
+  font-family: "fields", serif;
+}
+
+.font-body {
+  font-family: "indivisible", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-blue {
+  color: #476882;
+}
+
+.color-green {
+  color: #5C8000;
+}
+
 .color-dark-green {
   color: #185100;
+}
+
+.color-dark-brown {
+  color: #483627;
+}
+
+.color-red {
+  color: #9E4541;
 }
 
 .small-14 {
@@ -7659,9 +7702,14 @@ ol {
   font-weight: 500;
 }
 
-header.site-header {
-  background-color: #185100;
+.weight-semibold {
+  font-weight: 600;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 header.site-header #searchform input {
   margin: 0;
   border: 0;
@@ -8010,5 +8058,34 @@ article.post a:hover svg {
 }
 article.post a:hover svg path {
   fill: #9E4541;
+}
+
+.has-object-fit {
+  position: relative;
+}
+.has-object-fit .object-fit-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-tan {
+  background-color: #C09C5B;
+}
+
+.bg-dark-green {
+  background-color: #185100;
+}
+
+.bg-green {
+  background-color: #5C8000;
 }
 /*# sourceMappingURL=style.min.css.map */

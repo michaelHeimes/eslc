@@ -25,8 +25,36 @@ ol {
 	}
 }
 
+.font-header {
+	font-family: $font-header;
+}
+
+.font-body {
+	font-family: $font-body;
+}
+
+.color-white {
+	color: $white;
+}
+
+.color-blue {
+	color: $color-blue;
+}
+
+.color-green {
+	color: $color-green;
+}
+
 .color-dark-green {
 	color: $color-dark-green;
+}
+
+.color-dark-brown {
+	color: $color-dark-brown;
+}
+
+.color-red {
+	color: $color-red;
 }
 
 .small-14 {
@@ -35,4 +63,12 @@ ol {
 
 .weight-medium {
 	font-weight: 500;
+}
+
+.weight-semibold {
+	font-weight: 600;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }

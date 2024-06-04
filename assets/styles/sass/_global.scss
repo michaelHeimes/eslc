@@ -34,9 +34,24 @@ svg {
 button,
 .button {
 	margin: 0;
+	&:hover {
+		color: $color-blue;
+		background-color: $white;
+	}
+	&.small {
+		padding: 0.5715em 1.1645em;
+	}
+	&.large {
+		
+	}
 	&.tan {
 		background-color: $color-tan;
+		border-color: $color-tan;
 		color: $color-dark-brown;
+		&:hover {
+			background-color: $color-dark-brown;
+			color: $color-tan;
+		}
 	}
 }
 

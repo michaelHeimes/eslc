@@ -1,0 +1,214 @@
+{
+    "key": "group_665e2acb72ca3",
+    "title": "Content Modules",
+    "fields": [
+        {
+            "key": "field_665e2acb7224a",
+            "label": "Content Modules",
+            "name": "content_modules",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_665e2ae81ad1b": {
+                    "key": "layout_665e2ae81ad1b",
+                    "name": "hero",
+                    "label": "Hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_665e2af07224b",
+                            "label": "Hero",
+                            "name": "clone-hero",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e2a92bcf74"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e2fee8c7dc": {
+                    "key": "layout_665e2fee8c7dc",
+                    "name": "image_copy_cta",
+                    "label": "Image & Copy CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_665e2ff78c7df",
+                            "label": "Image & Copy CTA",
+                            "name": "clone-image_copy_cta",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e2f14aa3df"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e32aced89c": {
+                    "key": "layout_665e32aced89c",
+                    "name": "wysiwyg_button",
+                    "label": "WYSIWYG & Button",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_665e32b3ed89f",
+                            "label": "WYSIWYG & Button",
+                            "name": "clone-wysiwyg_button",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e30bb273ef"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e5caab4201": {
+                    "key": "layout_665e5caab4201",
+                    "name": "cta_cards_stats",
+                    "label": "CTA Cards & Stats",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_665e5cb1b4204",
+                            "label": "CTA Cards & Stats",
+                            "name": "clone-cta_cards_stats",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e32fd585fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e34f53176a": {
+                    "key": "layout_665e34f53176a",
+                    "name": "newsletter_signup",
+                    "label": "Newsletter Signup",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_665e34fc3176d",
+                            "label": "Newsletter Signup",
+                            "name": "clone-newsletter_signup",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e344adfc24"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e684498100": {
+                    "key": "layout_665e684498100",
+                    "name": "upcoming_recent_events_news",
+                    "label": "Upcoming\/Recent Events & News",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Module"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1717463462
+}
