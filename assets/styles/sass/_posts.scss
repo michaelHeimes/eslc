@@ -60,7 +60,8 @@
 	}
 }
 
-article.post {
+article.post,
+article.event-cpt {
 	margin-bottom: rem-calc(40);	
 	&:last-of-type {
 		margin-bottom: 1.75rem;
@@ -71,8 +72,10 @@ article.post {
 			padding-top: 1rem;
 		}
 		.date {
-			color: $color-dark-brown;
 			padding-bottom: 0.6rem;
+			&:not(.color-white) {
+				color: $color-dark-brown;
+			}
 		}
 		.h3 {
 			margin-bottom: .5em;

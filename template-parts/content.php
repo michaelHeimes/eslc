@@ -13,16 +13,16 @@
 	<div class="grid-x grid-padding-x">
 		<div class="cell small-12">
 			<div class="inner">
-				<a href="<?= esc_url( get_permalink() );?>" rel="bookmark">
+				<a <?php if( !is_home() || !is_archive() ):?> class="color-white"<?php endif;?> href="<?= esc_url( get_permalink() );?>" rel="bookmark">
 					<div class="grid-x grid-padding-x">
 						<div class="cell small-12 medium-6">
 							<?php the_post_thumbnail('full'); ?>
 						</div>
 						<div class="entry-header cell small-12 medium-6">
-							<div class="date weight-medium small-14">
+							<div class="date weight-medium small-14<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?>">
 								<?php echo get_the_date('F j, Y'); ?>
 							</div>
-							<h2 class="entry-title h3">
+							<h2 class="entry-title h3<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?>">
 								<span><?php the_title();?></span>
 							</h2>
 							<?php if( is_home() || is_archive() ):?>

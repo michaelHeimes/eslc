@@ -23,10 +23,20 @@ $queried_object = get_queried_object();
 							
 							<?php if ( have_posts() ) : 
 								
-								$categories = get_categories( array(
-									'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
-									'hide_empty' => 1,
-								) );
+								if( is_post_type_archive('event-cpt') || is_tax('event-category') ) {
+									$categories = get_terms( array(
+										'taxonomy' => 'event-category',
+										'exclude' => 1,
+										'hide_empty' => 1,
+									) );
+								} else {
+									$categories = get_categories( array(
+										'exclude' => 1, // Assuming the ID of the Uncategorized category is 1
+										'hide_empty' => 1,
+									) );
+								}
+								
+
 								
 								// Check if categories exist
 								if ( !empty( $categories ) ) {
@@ -70,5 +80,4 @@ $queried_object = get_queried_object();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
