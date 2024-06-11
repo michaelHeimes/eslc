@@ -100,13 +100,16 @@
 										</div>
 									</div>
 								</div>
-								<div class="right cell small-12 tablet-6">
+								<div class="right img-wrap cell small-12 tablet-6">
 									<?php if( !empty( get_field('footer_image', 'option') ) ) {
 										$imgID = get_field('footer_image', 'option')['ID'];
 										$img_alt = trim( strip_tags( get_post_meta( $imgID, '_wp_attachment_image_alt', true ) ) );
-										$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );
-										echo $img;
-									}?>
+										$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );?>
+										<div class="relative">
+											<?=$img;?>
+											<img class="mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-mask.svg" alt="ES Graphic Overlay">
+										</div>
+									<?php }?>
 								</div>
 							</div>
 						</div>

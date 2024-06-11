@@ -109,6 +109,7 @@ $print-hrefs: true;
 $-zf-size: null;
 $breakpoints: (
   "small": 0,
+  "mobile": 375,
   "medium": 640px,
   "tablet": 900px,
   "large": 1024px,
@@ -123,7 +124,7 @@ $breakpoints-hidpi: (
   "hidpi-3": 3
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium tablet large);
+$breakpoint-classes: (small mobile medium tablet large);
 
 // 3. The Grid
 // -----------

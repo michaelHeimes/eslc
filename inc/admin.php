@@ -55,12 +55,18 @@ add_filter('admin_footer_text', 'trailhead_custom_admin_footer');
 		// Define the style_formats array
 		$style_formats = array(  
 			// Each array child is a format with it's own settings
-	        array(  
-	            'title' => 'Large Blue Text',  
-	            'block' => 'span',  
-	            'classes' => 'large-blue-text',
-	            'wrapper' => true,
-	        ),
+			array(  
+				'title' => 'Download Link',  
+				'block' => 'span',  
+				'classes' => 'download-link',
+				'wrapper' => true,
+			),  
+			array(  
+				'title' => 'CTA Link',  
+				'block' => 'span',  
+				'classes' => 'cta-link',
+				'wrapper' => true,
+			),  
 		);
 		// Insert the array, JSON ENCODED, into 'style_formats'
 		$init_array['style_formats'] = json_encode( $style_formats );  
@@ -74,7 +80,7 @@ add_filter('admin_footer_text', 'trailhead_custom_admin_footer');
 	function theme_editor_style() {
 		add_editor_style( get_template_directory_uri() . '/assets/styles/style.min.css' );
 	}
-	add_action('init', 'theme_editor_style');
+	//add_action('init', 'theme_editor_style');
 
 
 	// remove revisions meta box and recreate on right side for all post types

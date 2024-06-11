@@ -1,17 +1,15 @@
 <?php
+$has_bg_img = false;
 $newsletter_background_image = get_sub_field('newsletter_background_image') ?? null;
+ if( !empty($newsletter_background_image) ) {
+	 $has_bg_img = true;
+ }
 $newsletter_heading = get_sub_field('newsletter_heading') ?? null;
 $newsletter_form_code = get_sub_field('newsletter_form_code') ?? null;
 ?>
 
 <?php if( !empty($newsletter_background_image) || !empty($newsletter_heading) || !empty($newsletter_form_code)  ):?>
-	<section class="newsletter_signup module relative has-object-fit">
-		<?php if( !empty( $newsletter_background_image) ) {
-			$imgID = $newsletter_background_image['ID'];
-			$img_alt = trim( strip_tags( get_post_meta( $imgID, '_wp_attachment_image_alt', true ) ) );
-			$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "object-fit-img", "alt"=>$img_alt] );
-			echo $img;
-		}?>
+	<section class="newsletter_signup module relative<?php if($has_bg_img == true) { echo ' has-bg-img relative';};?>" style="background-image: url(<?=esc_url( $newsletter_background_image['url']);?>)">
 		<div class="grid-container relative">
 			<div class="grid-x grid-padding-x align-center">
 				<div class="cell small-11 medium-10 tablet-8">

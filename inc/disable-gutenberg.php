@@ -1,37 +1,13 @@
 <?php
 
 // Disable Gutenberg
+add_filter( 'use_block_editor_for_post', '__return_false' );
 
-/**
- * Templates and Page IDs without editor
- *
- */
-function ea_disable_editor( $id = false ) {
- 
-     $excluded_templates = array(
-         'page-templates/page-home.php',
-         '', // This will catch pages with the default template
-     );
- 
-     $excluded_ids = array(
-         // get_option( 'page_on_front' )
-     );
- 
-     if( empty( $id ) )
-         return false;
- 
-     $id = intval( $id );
-     $template = get_page_template_slug( $id );
- 
-     return in_array( $id, $excluded_ids ) || in_array( $template, $excluded_templates );
- }
- 
- add_action( 'admin_init', function() {
-     if ( isset($_GET['post']) || isset($_POST['post_ID']) ) {
-         $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
-         if ( ea_disable_editor( $post_id ) ) {
-             remove_post_type_support( 'page', 'editor' );
-         }
-     }
- });
+//Remove Gutenberg Block Library CSS from loading on the frontend
+function smartwp_remove_wp_block_library_css(){
+ wp_dequeue_style( 'wp-block-library' );
+ wp_dequeue_style( 'wp-block-library-theme' );
+ wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+} 
+add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 

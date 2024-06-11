@@ -6,7 +6,7 @@ $hero_image = get_sub_field('hero_image') ?? null;
 ?>
 
 <?php if( !empty($hero_heading) || !empty($hero_large_text) || !empty($hero_button_link) || !empty($hero_image) ):?>
-	<header class="entry-header home-banner relative bg-dark-green">
+	<header class="entry-header home-hero relative bg-dark-green">
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x align-middle">
 				<?php if( !empty($hero_heading) || !empty($hero_large_text) ):?>
@@ -35,11 +35,14 @@ $hero_image = get_sub_field('hero_image') ?? null;
 				<?php if( !empty( $hero_image ) ) {
 					$imgID = $hero_image['ID'];
 					$img_alt = trim( strip_tags( get_post_meta( $imgID, '_wp_attachment_image_alt', true ) ) );
-					$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );
-					echo '<div class="img-wrap cell small-12 medium-6 tablet-7">';
-					echo $img;
-					echo '</div>';
-				}?>
+					$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );?>
+					<div class="img-wrap cell small-12 medium-6 tablet-7">
+						<div class="relative">
+							<?=$img;?>
+							<img class="mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-mask.svg" alt="ES Graphic Overlay">
+						</div>
+					</div>
+				<?php }?>
 			</div>
 		</div>
 	</header><!-- .entry-header -->

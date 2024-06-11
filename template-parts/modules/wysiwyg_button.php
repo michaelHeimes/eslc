@@ -1,9 +1,10 @@
 <?php
+$wysiwyg_background_color = get_sub_field('background_color') ?? null;
 $wysiwyg_buttons_copy = get_sub_field('wysiwyg_buttons_copy') ?? null;
 $wysiwyg_buttons_button_link = get_sub_field('wysiwyg_buttons_button_link') ?? null;
 ?>
 <?php if( !empty($wysiwyg_buttons_copy) || !empty($wysiwyg_buttons_copy) ):?>
-<section class="wysiwyg_button module">
+<section class="wysiwyg_button module bg-<?=esc_attr( $wysiwyg_background_color );?>">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-center">
 			<div class="cell small-12 medium-11 tablet-8 large-8">
