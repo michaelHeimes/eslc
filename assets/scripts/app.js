@@ -32,7 +32,7 @@
 //@*prepros-prepend vendor/foundation/js/plugins/foundation.tabs.js
 
 // Accordian
-//@*prepros-prepend vendor/foundation/js/plugins/foundation.accordion.js
+//@prepros-prepend vendor/foundation/js/plugins/foundation.accordion.js
 //@prepros-prepend vendor/foundation/js/plugins/foundation.accordionMenu.js
 //@*prepros-prepend vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js
 
@@ -80,7 +80,7 @@
 //@prepros-prepend vendor/what-input.js
 
 // Swiper
-//@*prepros-prepend vendor/swiper-bundle.js
+//@prepros-prepend vendor/swiper-bundle.js
 
 // DOM Ready
 (function($) {
@@ -142,6 +142,31 @@
             
         });
     }
+    
+    _app.image_slider = function() {
+        if( document.querySelector( '.image-slider-swiper' ) ) {
+            
+            const sliders = document.querySelectorAll('.image-slider-swiper .swiper-container');            
+            
+            sliders.forEach(function (slider, index) {
+                const dots = slider.parentElement.querySelector('.swiper-pagination');
+                const swiper = new Swiper(slider, {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    navigation: {
+                        enabled: true,
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: dots,
+                        clickable: true
+                    },
+                });  
+            });
+            
+        }
+    }
             
     _app.init = function() {
         
@@ -152,7 +177,7 @@
         _app.display_on_load();
         
         // Custom Functions
-        //_app.mobile_takover_nav();
+        _app.image_slider();
     }
     
     

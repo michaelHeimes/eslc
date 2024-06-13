@@ -17,6 +17,102 @@
                 "id": ""
             },
             "layouts": {
+                "layout_666871d933597": {
+                    "key": "layout_666871d933597",
+                    "name": "accordion",
+                    "label": "Accordion",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666871e03359a",
+                            "label": "Accordion",
+                            "name": "clone-accordion",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6668713df01b3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e5caab4201": {
+                    "key": "layout_665e5caab4201",
+                    "name": "cta_cards_stats",
+                    "label": "CTA Cards & Stats",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_665e5cb1b4204",
+                            "label": "CTA Cards & Stats",
+                            "name": "clone-cta_cards_stats",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e32fd585fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_666a42852f2d6": {
+                    "key": "layout_666a42852f2d6",
+                    "name": "full_width_image",
+                    "label": "Full Width Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666a43193e84d",
+                            "label": "Full Width Image",
+                            "name": "clone-full_width_image",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_666a42939bd8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_665e2ae81ad1b": {
                     "key": "layout_665e2ae81ad1b",
                     "name": "hero",
@@ -81,16 +177,16 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_665e5caab4201": {
-                    "key": "layout_665e5caab4201",
-                    "name": "cta_cards_stats",
-                    "label": "CTA Cards & Stats",
+                "layout_666a4e17fe91d": {
+                    "key": "layout_666a4e17fe91d",
+                    "name": "image_slider",
+                    "label": "Image Slider",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_665e5cb1b4204",
-                            "label": "CTA Cards & Stats",
-                            "name": "clone-cta_cards_stats",
+                            "key": "field_666a4e1ffe920",
+                            "label": "Image Slider",
+                            "name": "clone-image_slider",
                             "aria-label": "",
                             "type": "clone",
                             "instructions": "",
@@ -102,7 +198,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_665e32fd585fb"
+                                "group_666a4dcb1ff74"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -154,10 +250,42 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_666a4bf13fddf": {
+                    "key": "layout_666a4bf13fddf",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666a4bf73fde1",
+                            "label": "Video",
+                            "name": "clone-video",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_666a48cd5bdc9"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_665e32aced89c": {
                     "key": "layout_665e32aced89c",
                     "name": "wysiwyg_button",
-                    "label": "WYSIWYG & Button",
+                    "label": "WYSIWYG & Buttons",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -188,7 +316,7 @@
                         },
                         {
                             "key": "field_665e32b3ed89f",
-                            "label": "WYSIWYG & Button",
+                            "label": "WYSIWYG & Buttons",
                             "name": "clone-wysiwyg_button",
                             "aria-label": "",
                             "type": "clone",
@@ -252,5 +380,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718070634
+    "modified": 1718242881
 }

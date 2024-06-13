@@ -66,7 +66,7 @@ article.event-cpt {
 	&:last-of-type {
 		margin-bottom: 1.75rem;
 	}
-	a {
+	a:not(.button) {
 		color: $color-brown;
 		.entry-header {
 			padding-top: 1rem;

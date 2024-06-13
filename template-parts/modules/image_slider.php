@@ -1,18 +1,13 @@
 <?php
-	$fields = get_sub_field('image_slider');
-	$copy = $fields['copy'];
-	$images = $fields['images'];
+	$images = get_sub_field('images') ?? null;
+	$caption = get_sub_field('caption') ?? null;
 ?>
 <section class="module image-slider">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-center">
-			<?php if( !empty( $copy ) ):?>
-			<div class="header cell small-12 medium-11 tablet-8">
-				<?= $copy;?>
-			</div>
-			<?php endif;?>
+
 			<?php if( !empty( $images ) ):?>
-			<div class="cell small-12 medium-11 tablet-8">
+			<div class="cell small-12 medium-11 tablet-10 large-8">
 				<div class="image-slider-swiper overflow-hidden">
 					<div class="swiper-container relative">
 						<div class="swiper-nav swiper-button-prev">
@@ -34,6 +29,9 @@
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
+				<?php if( !empty($caption) ):?>
+					<p><?=esc_html( $caption );?></p>
+				<?php endif;?>
 			</div>
 			<?php endif;?>
 		</div>

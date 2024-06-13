@@ -15,6 +15,14 @@ if( have_rows('content_modules') ):
 		get_template_part('template-parts/modules/newsletter_signup');
 		elseif( get_row_layout() == 'upcoming_recent_events_news' ):
 		get_template_part('template-parts/modules/upcoming_recent_events_news');
+		elseif( get_row_layout() == 'accordion' ):
+		get_template_part('template-parts/modules/accordion');
+		elseif( get_row_layout() == 'full_width_image' ):
+		get_template_part('template-parts/modules/full_width_image');
+		elseif( get_row_layout() == 'video' ):
+		get_template_part('template-parts/modules/video');
+		elseif( get_row_layout() == 'image_slider' ):
+		get_template_part('template-parts/modules/image_slider');
 		endif;
 
 	endwhile;
