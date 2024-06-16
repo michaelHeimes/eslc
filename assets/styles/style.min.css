@@ -8501,6 +8501,10 @@ svg {
   position: relative;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 button,
 .button {
   margin: 0;
@@ -9054,6 +9058,10 @@ ol {
   color: #185100;
 }
 
+.color-brown {
+  color: #8B7751;
+}
+
 .color-dark-brown {
   color: #483627;
 }
@@ -9575,5 +9583,19 @@ article.event-cpt a:not(.button):hover svg path {
   .wysiwyg_button .button-group .btn-wrap {
     margin-bottom: 32px;
   }
+}
+
+.image-slider.module .swiper-btn:after {
+  display: none;
+}
+.image-slider.module .swiper-pagination {
+  position: static;
+}
+
+.people_cards h2 {
+  color: #185100;
+}
+.people_cards h3 {
+  color: #5C8000;
 }
 /*# sourceMappingURL=style.min.css.map */

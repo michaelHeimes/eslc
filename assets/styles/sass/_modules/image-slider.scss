@@ -1,0 +1,10 @@
+.image-slider.module {
+	.swiper-btn  {
+		&:after {
+			display: none;
+		}
+	}
+	.swiper-pagination {
+		position: static;
+	}
+}

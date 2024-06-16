@@ -67,6 +67,12 @@ add_filter('admin_footer_text', 'trailhead_custom_admin_footer');
 				'classes' => 'cta-link',
 				'wrapper' => true,
 			),  
+			array(  
+				'title' => 'Citation',  
+				'block' => 'cite',  
+				'classes' => 'citation',
+				'wrapper' => true,
+			),  
 		);
 		// Insert the array, JSON ENCODED, into 'style_formats'
 		$init_array['style_formats'] = json_encode( $style_formats );  

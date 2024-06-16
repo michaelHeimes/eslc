@@ -92,5 +92,7 @@ $mediumGutter: map-get($grid-margin-gutters, "medium");
 @import "_modules/newsletter";
 @import "_modules/wysiwyg";
 @import "_modules/accordion";
+@import "_modules/image-slider";
+@import "_modules/people-cards";
 
 @import "_pages/home";

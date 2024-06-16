@@ -3,6 +3,24 @@
     "title": "WYSIWYG & Button",
     "fields": [
         {
+            "key": "field_666e3ce2baac0",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>Use <code>Formats<\/code> for <b>Download Links, CTA Links, and Quote Citations.<\/p>\r\nThe shortcode <code>[social-media-links]<\/code> displays the Social Media menu.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
             "key": "field_665e30bb29c71",
             "label": "Copy",
             "name": "wysiwyg_buttons_copy",
@@ -82,5 +100,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718120532
+    "modified": 1718500729
 }

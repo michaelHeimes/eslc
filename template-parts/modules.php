@@ -23,6 +23,8 @@ if( have_rows('content_modules') ):
 		get_template_part('template-parts/modules/video');
 		elseif( get_row_layout() == 'image_slider' ):
 		get_template_part('template-parts/modules/image_slider');
+		elseif( get_row_layout() == 'people_cards' ):
+		get_template_part('template-parts/modules/people_cards');
 		endif;
 
 	endwhile;

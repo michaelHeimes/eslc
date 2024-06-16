@@ -241,6 +241,38 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_666e2cfdf3ed8": {
+                    "key": "layout_666e2cfdf3ed8",
+                    "name": "people_cards",
+                    "label": "People Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666e2d06f3edb",
+                            "label": "People Cards",
+                            "name": "clone-people_cards",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_666c813521ffa"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_665e684498100": {
                     "key": "layout_665e684498100",
                     "name": "upcoming_recent_events_news",
@@ -380,5 +412,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718242881
+    "modified": 1718496544
 }

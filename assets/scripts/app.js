@@ -150,13 +150,16 @@
             
             sliders.forEach(function (slider, index) {
                 const dots = slider.parentElement.querySelector('.swiper-pagination');
+                const swiperPrev = slider.parentElement.querySelector('.swiper-button-prev');
+                const swiperNext = slider.parentElement.querySelector('.swiper-button-next');
                 const swiper = new Swiper(slider, {
                     slidesPerView: 1,
                     spaceBetween: 30,
+                    loop: true,
                     navigation: {
                         enabled: true,
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
+                        nextEl: swiperNext,
+                        prevEl: swiperPrev,
                     },
                     pagination: {
                         el: dots,

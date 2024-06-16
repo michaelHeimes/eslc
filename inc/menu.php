@@ -137,7 +137,7 @@ add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
 				// append icon
 				if( $icon ) {
 					
-					$item->title = '<span class="icon" aria-hidden="true"><img class="style-svg" src="' . $icon['url'] . '" alt="' . $icon['alt'] . '"></span><span class="show-for-sr"' . $item->title . '</span>';
+					$item->title = '<span class="icon" aria-hidden="true"><img class="style-svg" src="' . $icon['url'] . '" alt="' . $icon['alt'] . '"></span><span class="show-for-sr">' . $item->title . '</span>';
 					
 				}
 				
