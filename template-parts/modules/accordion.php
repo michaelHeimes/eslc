@@ -25,7 +25,9 @@ $accordion_accordions = get_sub_field('accordion_accordions') ?? null;
 								</a>
 							
 								<div class="accordion-content" data-tab-content>
-									<?=wp_kses_post( $content );?>
+									<div class="inner">
+										<?=wp_kses_post( $content );?>
+									</div>
 								</div>
 						  	</li>
 						<?php endforeach;?>

@@ -66,36 +66,36 @@ article.event-cpt {
 	&:last-of-type {
 		margin-bottom: 1.75rem;
 	}
-	a:not(.button) {
-		color: $color-brown;
-		.entry-header {
-			padding-top: 1rem;
-		}
-		.date {
-			padding-bottom: 0.6rem;
-			&:not(.color-white) {
-				color: $color-dark-brown;
-			}
-		}
-		.h3 {
-			margin-bottom: .5em;
-		}
-		svg {
-			transition: transform .35s ease;
-			path {
-				transition: .25s ease;
-			}
-		}
-		&:hover {
-			.h3 {
-				text-decoration: underline;
-			}
-			svg {
-				transform: translateX(23px);
-				path {
-					fill: $color-red;
-				}
-			}
-		}
-	}
+	// a:not(.button) {
+	// 	color: $color-brown;
+	// 	.entry-header {
+	// 		padding-top: 1rem;
+	// 	}
+	// 	.date {
+	// 		padding-bottom: 0.6rem;
+	// 		&:not(.color-white) {
+	// 			color: $color-dark-brown;
+	// 		}
+	// 	}
+	// 	.h3 {
+	// 		margin-bottom: .5em;
+	// 	}
+	// 	svg {
+	// 		transition: transform .35s ease;
+	// 		path {
+	// 			transition: .25s ease;
+	// 		}
+	// 	}
+	// 	&:hover {
+	// 		.h3 {
+	// 			text-decoration: underline;
+	// 		}
+	// 		svg {
+	// 			transform: translateX(23px);
+	// 			path {
+	// 				fill: $color-red;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

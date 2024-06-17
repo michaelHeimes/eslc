@@ -1,0 +1,118 @@
+.cta_cards_stats {
+	padding-bottom: 0;
+	.bg-tan {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		bottom: 133px;
+	}
+	img.mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.top {
+		padding-top: 2.063rem;
+		padding-top: clamp(2.063rem, 1.384rem + 3.395vw, 3.9rem);
+		@include breakpoint(medium) {
+			padding-top: 3.9rem;
+			padding-top: clamp(2.063rem, 1.384rem + 3.395vw, 3.9rem);
+		}
+		h2 {
+			margin-bottom: 2.063rem;
+			margin-bottom: clamp(2.063rem, 1.393rem + 3.349vw, 3.875rem);
+			@include breakpoint(medium) {
+				margin-bottom: 3.875rem;
+				margin-bottom: clamp(2.063rem, 1.393rem + 3.349vw, 3.875rem);
+			}
+		}
+		.cta-card {
+			.inner {
+				box-shadow: 0px 10px 19px 0px rgba(0,0,0,0.2);
+				color: $black;
+			}
+			.inner,
+			.text-wrap,
+			.text-wrap h3,
+			.text-wrap p,
+			.title-wrap,
+			.title-wrap svg path {
+				transition: color .25s ease, background-color .25s ease;
+			}
+			.text-wrap p {
+				margin: 0;
+			}
+			a.inner:hover {
+				background-color: $color-blue;
+				.text-wrap,
+				.title-wrap {
+					color: $white;
+					h3,
+					p {
+						color: $white;
+					}
+				}
+				.title-wrap svg path {
+					fill: $white;
+				}
+				svg {
+					transform: translateX(8px);
+					path {
+						fill: $white;
+					}
+				}
+			}
+			.text-wrap {
+				padding: 1.5rem;
+			}
+			.title-wrap {
+				padding: .25rem 1.5rem 1.5rem;				
+				font-size: rem-calc(18);
+				font-size: clamp(0.938rem, 0.868rem + 0.346vw, 1.125rem);
+				font-weight: 600;
+				flex: 1;
+				span {
+					display: inline-block;
+					margin-right: .4em;
+				}
+				svg {
+					transition: .3s ease;
+					path {
+						transition: .3s ease;
+					}
+				}
+			}
+		}
+	}
+	.bottom {
+		z-index: -1;
+		padding-top: 133px;
+		padding-bottom: 72px;
+		margin-top: -133px;
+		.grid-container {
+			padding-top: 80px;
+		}
+		.cta-card {
+			.font-header {
+				font-size: 3rem;
+				font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
+				@include breakpoint(medium) {
+					font-size: 4.5rem;
+					font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
+				}
+				&:after {
+					content: '';
+					display: block;
+					width: 80px;
+					height: 1px;
+					background-color: $color-tan;
+					margin: 0 auto .65rem;
+				}
+			}
+		}
+	}
+}

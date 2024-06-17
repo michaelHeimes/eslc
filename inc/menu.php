@@ -56,7 +56,7 @@ class Off_Canvas_Menu_Walker extends Walker_Nav_Menu {
 	}
 }
 
-// The Social Links Menu
+// The Utility Nav Menu
 function trailhead_utility_nav() {
 	wp_nav_menu(array(
 		'container'			=> 'false',				// Remove nav container
@@ -66,7 +66,7 @@ function trailhead_utility_nav() {
 		'depth'				=> 0,					// Limit the depth of the nav
 		'fallback_cb'		=> ''					// Fallback function
 	));
-} /* End Social Links Menu */
+} /* End Utility Nav Menu */
 
 // The Footer Menu
 function trailhead_footer_links() {
@@ -84,7 +84,6 @@ function trailhead_footer_links() {
 function trailhead_social_links() {
 	wp_nav_menu(array(
 		'container'			=> 'false',				// Remove nav container
-		'menu_id'			=> 'social-links',		// Adding custom nav id
 		'menu_class'		=> 'menu social-links',				// Adding custom nav class
 		'theme_location'	=> 'social-links',		// Where it's located in the theme
 		'depth'				=> 0,					// Limit the depth of the nav
@@ -137,7 +136,7 @@ add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
 				// append icon
 				if( $icon ) {
 					
-					$item->title = '<span class="icon" aria-hidden="true"><img class="style-svg" src="' . $icon['url'] . '" alt="' . $icon['alt'] . '"></span><span class="show-for-sr">' . $item->title . '</span>';
+					$item->title = '<span class="icon grid-x align-middle align-center h-100" aria-hidden="true"><img class="style-svg" src="' . $icon['url'] . '" alt="' . $icon['alt'] . '"></span><span class="show-for-sr">' . $item->title . '</span>';
 					
 				}
 				

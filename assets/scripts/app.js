@@ -177,7 +177,7 @@
         _app.foundation_init();
         _app.emptyParentLinks();
         _app.fixed_nav_hack();
-        _app.display_on_load();
+        // _app.display_on_load();
         
         // Custom Functions
         _app.image_slider();

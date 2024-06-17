@@ -77,7 +77,7 @@ $foundation-palette: (
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #A19B96;
 $black: #000;
 $white: #fff;
 $body-background: $white;
@@ -154,7 +154,7 @@ $header-styles: (
     'h1': ('font-size': 32),
     'h2': ('font-size': 22),
     'h3': ('font-size': 24),
-    'h4': ('font-size': 18),
+    'h4': ('font-size': 20),
     'h5': ('font-size': 16),
     'h6': ('font-size': 16),
   ),
@@ -244,12 +244,12 @@ $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
 $accordion-title-font-size: rem-calc(20);
 $accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
+$accordion-item-background-hover: transparent;
+$accordion-item-padding: 1.05em 0;
 $accordion-content-background: $white;
 $accordion-content-border: 0px solid $light-gray;
 $accordion-content-color: $body-font-color;
-$accordion-content-padding: 1rem;
+$accordion-content-padding: 0;
 
 // 8. Accordion Menu
 // -----------------

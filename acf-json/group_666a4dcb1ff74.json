@@ -3,6 +3,28 @@
     "title": "Image Slider",
     "fields": [
         {
+            "key": "field_666f79f99d3f0",
+            "label": "Spacing Options",
+            "name": "clone-spacing_options",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_666f781ace543"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_666a4dcbf990c",
             "label": "Images",
             "name": "images",
@@ -69,5 +91,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718243383
+    "modified": 1718581770
 }

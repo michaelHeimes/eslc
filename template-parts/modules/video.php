@@ -1,8 +1,10 @@
 <?php
+$remove_top_padding = get_sub_field('remove_top_padding') ?? null; 
+$remove_bottom_padding = get_sub_field('remove_bottom_padding') ?? null; 
 $video = get_sub_field('video') ?? null;
 $video_caption = get_sub_field('video_caption') ?? null;
 ?>
-<section class="video module">
+<section class="video module<?php if($remove_top_padding == true) { echo ' no-top-padding';} if ($remove_bottom_padding == true) { echo ' no-bottom-padding';}?>">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-center">
 			<div class="cell small-12 medium-11 tablet-10 large-8">

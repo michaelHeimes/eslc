@@ -1,0 +1,13 @@
+.img-copy-cta {
+	.img-wrap {
+		padding-left: 0;
+		@include breakpoint(small down) {
+			padding: 0;
+		}
+	}
+	.right {
+		> div {
+			padding: 3rem 0;
+		}
+	}
+}

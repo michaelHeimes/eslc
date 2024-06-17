@@ -191,7 +191,7 @@ wp_enqueue_style( 'dmc-', 'https://fonts.googleapis.com/css2?family=Barlow+Conde
 
 
 // Disable Tabelpress Stylesheet
-add_filter( 'tablepress_use_default_css', '__return_false' );
+//add_filter( 'tablepress_use_default_css', '__return_false' );
 
 
 /**
@@ -238,7 +238,7 @@ require_once(get_template_directory().'/inc/comments.php');
 require_once(get_template_directory().'/inc/page-navi.php'); 
 
 // Adds site styles to the WordPress editor
-require_once(get_template_directory().'/inc/editor-styles.php'); 
+//require_once(get_template_directory().'/inc/editor-styles.php'); 
 
 // ACF Options
 require_once(get_template_directory().'/inc/acf-json.php');

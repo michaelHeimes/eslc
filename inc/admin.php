@@ -22,10 +22,10 @@ add_filter('admin_footer_text', 'trailhead_custom_admin_footer');
 	add_filter('tiny_mce_before_init', 'custom_tinymce_config');
 
 	function dg_tiny_mce_remove_h1( $in ) {
-	        $in['block_formats'] = "Paragraph=p; Heading 2=h2; Heading 3=h3; Heading 4=h4; Heading 5=h5; Heading 6=h6;Preformatted=pre";
+	        $in['block_formats'] = "Paragraph=p; Heading 1=h1; Heading 2=h2; Heading 3=h3;";
 	    return $in;
 	}
-	add_filter( 'tiny_mce_before_init', 'dg_tiny_mce_remove_h1' );
+	//add_filter( 'tiny_mce_before_init', 'dg_tiny_mce_remove_h1' );
 
 
 /**

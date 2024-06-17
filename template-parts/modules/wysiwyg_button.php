@@ -1,11 +1,14 @@
 <?php
+$remove_top_padding = get_sub_field('remove_top_padding') ?? null; 
+$remove_bottom_padding = get_sub_field('remove_bottom_padding') ?? null; 
 $wysiwyg_background_color = get_sub_field('background_color') ?? null;
 $wysiwyg_buttons_copy = get_sub_field('wysiwyg_buttons_copy') ?? null;
 $wysiwyg_buttons_button_link = get_sub_field('wysiwyg_buttons_button_link') ?? null;
 $wysiwyg_buttons_button_links = get_sub_field('wysiwyg_buttons_button_links') ?? null; 
 ?>
 <?php if( !empty($wysiwyg_buttons_copy) || !empty($wysiwyg_buttons_copy) ):?>
-<section class="wysiwyg_button module bg-<?=esc_attr( $wysiwyg_background_color );?>">
+<section class="wysiwyg_button module 
+	bg-<?=esc_attr( $wysiwyg_background_color );?><?php if($remove_top_padding == true) { echo ' no-top-padding';} if ($remove_bottom_padding == true) { echo ' no-bottom-padding';}?>">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-center">
 			<div class="cell small-12 medium-11 tablet-10 large-8">

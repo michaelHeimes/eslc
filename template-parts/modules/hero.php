@@ -12,10 +12,10 @@ $hero_image = get_sub_field('hero_image') ?? null;
 				<?php if( !empty($hero_heading) || !empty($hero_large_text) ):?>
 					<div class="cell small-12 medium-6 tablet-5">
 						<?php if( !empty($hero_heading) ):?>
-							<h1>
+							<h1 class="color-tan">
 								<?=esc_html( $hero_heading );?>
 								<?php if( !empty($hero_large_text) ):?>
-									<br><span class="font-body"><?=esc_html( $hero_large_text );?></span>
+									<br><span class="font-body color-white"><?=esc_html( $hero_large_text );?></span>
 								<?php endif;?>
 							</h1>
 						<?php endif;?>

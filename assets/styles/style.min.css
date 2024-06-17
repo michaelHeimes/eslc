@@ -329,7 +329,7 @@ textarea {
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #8a8a8a;
+  border: 1px solid #A19B96;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px #cacaca;
           box-shadow: 0 0 5px #cacaca;
@@ -553,7 +553,7 @@ select {
   font-weight: normal;
   line-height: 1.5;
   color: #000;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28138, 138, 138%29"></polygon></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28161, 155, 150%29"></polygon></svg>');
   background-origin: content-box;
   background-position: right -1rem center;
   background-repeat: no-repeat;
@@ -566,12 +566,12 @@ select {
 }
 @media screen and (min-width: 0\0 ) {
   select {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg==");
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMBJREFUeNrEllsOhCAMRVszC9IlzU7KCmVHTJsoMWYMUtpyv9BgbuXQB5ZSdgBYYY4ycgBivk8KYFsQMfMiTTBP4o3nUzCKzOabLJbLy2/g31evGkAginR4/ZegKH5qX3bJCscA3t0x3kgO5tQFyhhFf50xRqFLbyMUNJQzgyjGS/wgCpvKqkRBpuWrE4V9d+1E4dPUXqIg107SQOE/2DRQxMwTDygIInVDET9T3lCoj/6j/VCmGjZOl2lKpZ8AAwDQP7zIimDGFQAAAABJRU5ErkJggg==");
   }
 }
 select:focus {
   outline: none;
-  border: 1px solid #8a8a8a;
+  border: 1px solid #A19B96;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px #cacaca;
           box-shadow: 0 0 5px #cacaca;
@@ -648,6 +648,20 @@ h6,
 pre,
 form,
 p,
+.newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at textarea,
 blockquote,
 th,
 td {
@@ -655,7 +669,20 @@ td {
   padding: 0;
 }
 
-p {
+p, .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at textarea {
   margin-bottom: 1rem;
   font-size: inherit;
   line-height: 1.6;
@@ -681,8 +708,34 @@ small {
 
 h1, .h1,
 h2, .h2,
-h3, .h3,
-h4, .h4,
+h3, .h3, .module.wysiwyg_button blockquote p, .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=text],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=password],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=date],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime-local],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=month],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=week],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=email],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=number],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=search],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=tel],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=time],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=url],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote textarea, .newsletter_signup .ngp-form.at fieldset legend,
+h4, .h4, .module.wysiwyg_button cite.citation,
 h5, .h5,
 h6, .h6 {
   font-family: "fields", serif;
@@ -693,8 +746,34 @@ h6, .h6 {
 }
 h1 small, .h1 small,
 h2 small, .h2 small,
-h3 small, .h3 small,
-h4 small, .h4 small,
+h3 small, .h3 small, .module.wysiwyg_button blockquote p small, .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=text] small, .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=text] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=password] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=password] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=date] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=date] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime-local] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime-local] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=month] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=month] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=week] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=week] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=email] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=email] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=number] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=number] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=search] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=search] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=tel] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=tel] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=time] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=time] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=url] small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=url] small,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at textarea small,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote textarea small, .newsletter_signup .ngp-form.at fieldset legend small,
+h4 small, .h4 small, .module.wysiwyg_button cite.citation small,
 h5 small, .h5 small,
 h6 small, .h6 small {
   line-height: 0;
@@ -715,15 +794,41 @@ h2, .h2 {
   margin-bottom: 0.5rem;
 }
 
-h3, .h3 {
+h3, .h3, .module.wysiwyg_button blockquote p, .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=text],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=password],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=date],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime-local],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=month],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=week],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=email],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=number],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=search],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=tel],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=time],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=url],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote textarea, .newsletter_signup .ngp-form.at fieldset legend {
   font-size: 1.5rem;
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-h4, .h4 {
-  font-size: 1.125rem;
+h4, .h4, .module.wysiwyg_button cite.citation {
+  font-size: 1.25rem;
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -750,10 +855,36 @@ h6, .h6 {
   h2, .h2 {
     font-size: 2.5rem;
   }
-  h3, .h3 {
+  h3, .h3, .module.wysiwyg_button blockquote p, .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=text],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=password],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=password],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=date],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=date],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime-local],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=month],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=month],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=week],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=week],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=email],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=email],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=number],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=number],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=search],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=search],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=tel],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=tel],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=time],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=time],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=url],
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=url],
+  .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at textarea,
+  .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote textarea, .newsletter_signup .ngp-form.at fieldset legend {
     font-size: 1.25rem;
   }
-  h4, .h4 {
+  h4, .h4, .module.wysiwyg_button cite.citation {
     font-size: 1.125rem;
   }
   h5, .h5 {
@@ -826,9 +957,35 @@ blockquote {
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #cacaca;
 }
-blockquote, blockquote p {
+blockquote, blockquote p, blockquote .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at blockquote input[type=text],
+blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at blockquote input[type=password],
+blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at blockquote input[type=date],
+blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at blockquote input[type=datetime],
+blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at blockquote input[type=datetime-local],
+blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at blockquote input[type=month],
+blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at blockquote input[type=week],
+blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at blockquote input[type=email],
+blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at blockquote input[type=number],
+blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at blockquote input[type=search],
+blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at blockquote input[type=tel],
+blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at blockquote input[type=time],
+blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at blockquote input[type=url],
+blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at blockquote textarea {
   line-height: 1.6;
-  color: #8a8a8a;
+  color: #A19B96;
 }
 
 abbr, abbr[title] {
@@ -854,7 +1011,7 @@ kbd {
   margin-bottom: 0.5rem;
   font-weight: normal;
   line-height: 1.4;
-  color: #8a8a8a;
+  color: #A19B96;
 }
 
 .lead {
@@ -866,7 +1023,20 @@ kbd {
   font-size: 2.5rem;
   line-height: 1;
 }
-p + .stat {
+p + .stat, .newsletter_signup .ngp-form.at input[type=text] + .stat,
+.newsletter_signup .ngp-form.at input[type=password] + .stat,
+.newsletter_signup .ngp-form.at input[type=date] + .stat,
+.newsletter_signup .ngp-form.at input[type=datetime] + .stat,
+.newsletter_signup .ngp-form.at input[type=datetime-local] + .stat,
+.newsletter_signup .ngp-form.at input[type=month] + .stat,
+.newsletter_signup .ngp-form.at input[type=week] + .stat,
+.newsletter_signup .ngp-form.at input[type=email] + .stat,
+.newsletter_signup .ngp-form.at input[type=number] + .stat,
+.newsletter_signup .ngp-form.at input[type=search] + .stat,
+.newsletter_signup .ngp-form.at input[type=tel] + .stat,
+.newsletter_signup .ngp-form.at input[type=time] + .stat,
+.newsletter_signup .ngp-form.at input[type=url] + .stat,
+.newsletter_signup .ngp-form.at textarea + .stat {
   margin-top: -1rem;
 }
 
@@ -877,7 +1047,7 @@ ul.no-bullet, ol.no-bullet {
 
 .cite-block, cite {
   display: block;
-  color: #8a8a8a;
+  color: #A19B96;
   font-size: 0.8125rem;
 }
 .cite-block:before, cite:before {
@@ -1036,7 +1206,7 @@ ul.no-bullet, ol.no-bullet {
   }
   pre,
   blockquote {
-    border: 1px solid #8a8a8a;
+    border: 1px solid #A19B96;
     page-break-inside: avoid;
   }
   thead {
@@ -1052,7 +1222,20 @@ ul.no-bullet, ol.no-bullet {
   @page {
     margin: 0.5cm;
   }
-  p,
+  p, .newsletter_signup .ngp-form.at input[type=text],
+  .newsletter_signup .ngp-form.at input[type=password],
+  .newsletter_signup .ngp-form.at input[type=date],
+  .newsletter_signup .ngp-form.at input[type=datetime],
+  .newsletter_signup .ngp-form.at input[type=datetime-local],
+  .newsletter_signup .ngp-form.at input[type=month],
+  .newsletter_signup .ngp-form.at input[type=week],
+  .newsletter_signup .ngp-form.at input[type=email],
+  .newsletter_signup .ngp-form.at input[type=number],
+  .newsletter_signup .ngp-form.at input[type=search],
+  .newsletter_signup .ngp-form.at input[type=tel],
+  .newsletter_signup .ngp-form.at input[type=time],
+  .newsletter_signup .ngp-form.at input[type=url],
+  .newsletter_signup .ngp-form.at textarea,
   h2,
   h3 {
     orphans: 3;
@@ -4851,7 +5034,7 @@ ul.no-bullet, ol.no-bullet {
     height: calc(100vh + 2rem);
   }
 }
-.button {
+.button, .newsletter_signup .ngp-form.at input[type=submit] {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -4868,168 +5051,168 @@ ul.no-bullet, ol.no-bullet {
   text-align: center;
   cursor: pointer;
 }
-[data-whatinput=mouse] .button {
+[data-whatinput=mouse] .button, [data-whatinput=mouse] .newsletter_signup .ngp-form.at input[type=submit], .newsletter_signup .ngp-form.at [data-whatinput=mouse] input[type=submit] {
   outline: 0;
 }
-.button.tiny {
+.button.tiny, .newsletter_signup .ngp-form.at input.tiny[type=submit] {
   font-size: 0.6rem;
 }
-.button.small {
+.button.small, .newsletter_signup .ngp-form.at input.small[type=submit] {
   font-size: 0.875rem;
 }
-.button.large {
+.button.large, .newsletter_signup .ngp-form.at input.large[type=submit] {
   font-size: 1.125rem;
 }
-.button.expanded {
+.button.expanded, .newsletter_signup .ngp-form.at input.expanded[type=submit] {
   display: block;
   width: 100%;
   margin-right: 0;
   margin-left: 0;
 }
-.button, .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
+.button, .newsletter_signup .ngp-form.at input[type=submit], .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
   background-color: #476882;
   color: #fff;
 }
-.button:hover, .button:focus {
+.button:hover, .newsletter_signup .ngp-form.at input[type=submit]:hover, .button:focus, .newsletter_signup .ngp-form.at input[type=submit]:focus {
   background-color: #3c586f;
   color: #fff;
 }
-.button.primary, .button.primary.disabled, .button.primary[disabled], .button.primary.disabled:hover, .button.primary[disabled]:hover, .button.primary.disabled:focus, .button.primary[disabled]:focus {
+.button.primary, .newsletter_signup .ngp-form.at input.primary[type=submit], .button.primary.disabled, .button.primary[disabled], .button.primary.disabled:hover, .button.primary[disabled]:hover, .button.primary.disabled:focus, .button.primary[disabled]:focus {
   background-color: #476882;
   color: #fff;
 }
-.button.primary:hover, .button.primary:focus {
+.button.primary:hover, .newsletter_signup .ngp-form.at input.primary[type=submit]:hover, .button.primary:focus, .newsletter_signup .ngp-form.at input.primary[type=submit]:focus {
   background-color: #395368;
   color: #fff;
 }
-.button.secondary, .button.secondary.disabled, .button.secondary[disabled], .button.secondary.disabled:hover, .button.secondary[disabled]:hover, .button.secondary.disabled:focus, .button.secondary[disabled]:focus {
+.button.secondary, .newsletter_signup .ngp-form.at input.secondary[type=submit], .button.secondary.disabled, .button.secondary[disabled], .button.secondary.disabled:hover, .button.secondary[disabled]:hover, .button.secondary.disabled:focus, .button.secondary[disabled]:focus {
   background-color: #767676;
   color: #000;
 }
-.button.secondary:hover, .button.secondary:focus {
+.button.secondary:hover, .newsletter_signup .ngp-form.at input.secondary[type=submit]:hover, .button.secondary:focus, .newsletter_signup .ngp-form.at input.secondary[type=submit]:focus {
   background-color: #5e5e5e;
   color: #000;
 }
-.button.success, .button.success.disabled, .button.success[disabled], .button.success.disabled:hover, .button.success[disabled]:hover, .button.success.disabled:focus, .button.success[disabled]:focus {
+.button.success, .newsletter_signup .ngp-form.at input.success[type=submit], .button.success.disabled, .button.success[disabled], .button.success.disabled:hover, .button.success[disabled]:hover, .button.success.disabled:focus, .button.success[disabled]:focus {
   background-color: #3adb76;
   color: #000;
 }
-.button.success:hover, .button.success:focus {
+.button.success:hover, .newsletter_signup .ngp-form.at input.success[type=submit]:hover, .button.success:focus, .newsletter_signup .ngp-form.at input.success[type=submit]:focus {
   background-color: #22bb5b;
   color: #000;
 }
-.button.warning, .button.warning.disabled, .button.warning[disabled], .button.warning.disabled:hover, .button.warning[disabled]:hover, .button.warning.disabled:focus, .button.warning[disabled]:focus {
+.button.warning, .newsletter_signup .ngp-form.at input.warning[type=submit], .button.warning.disabled, .button.warning[disabled], .button.warning.disabled:hover, .button.warning[disabled]:hover, .button.warning.disabled:focus, .button.warning[disabled]:focus {
   background-color: #ffae00;
   color: #000;
 }
-.button.warning:hover, .button.warning:focus {
+.button.warning:hover, .newsletter_signup .ngp-form.at input.warning[type=submit]:hover, .button.warning:focus, .newsletter_signup .ngp-form.at input.warning[type=submit]:focus {
   background-color: #cc8b00;
   color: #000;
 }
-.button.alert, .button.alert.disabled, .button.alert[disabled], .button.alert.disabled:hover, .button.alert[disabled]:hover, .button.alert.disabled:focus, .button.alert[disabled]:focus {
+.button.alert, .newsletter_signup .ngp-form.at input.alert[type=submit], .button.alert.disabled, .button.alert[disabled], .button.alert.disabled:hover, .button.alert[disabled]:hover, .button.alert.disabled:focus, .button.alert[disabled]:focus {
   background-color: #cc4b37;
   color: #000;
 }
-.button.alert:hover, .button.alert:focus {
+.button.alert:hover, .newsletter_signup .ngp-form.at input.alert[type=submit]:hover, .button.alert:focus, .newsletter_signup .ngp-form.at input.alert[type=submit]:focus {
   background-color: #a53b2a;
   color: #000;
 }
-.button.hollow, .button.hollow:hover, .button.hollow:focus, .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus {
+.button.hollow, .newsletter_signup .ngp-form.at input.hollow[type=submit], .button.hollow:hover, .button.hollow:focus, .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus {
   background-color: transparent;
 }
-.button.hollow, .button.hollow.disabled, .button.hollow[disabled], .button.hollow.disabled:hover, .button.hollow[disabled]:hover, .button.hollow.disabled:focus, .button.hollow[disabled]:focus {
+.button.hollow, .newsletter_signup .ngp-form.at input.hollow[type=submit], .button.hollow.disabled, .button.hollow[disabled], .button.hollow.disabled:hover, .button.hollow[disabled]:hover, .button.hollow.disabled:focus, .button.hollow[disabled]:focus {
   border: 1px solid #476882;
   color: #476882;
 }
-.button.hollow:hover, .button.hollow:focus {
+.button.hollow:hover, .newsletter_signup .ngp-form.at input.hollow[type=submit]:hover, .button.hollow:focus, .newsletter_signup .ngp-form.at input.hollow[type=submit]:focus {
   border-color: #243441;
   color: #243441;
 }
-.button.hollow.primary, .button.hollow.primary.disabled, .button.hollow.primary[disabled], .button.hollow.primary.disabled:hover, .button.hollow.primary[disabled]:hover, .button.hollow.primary.disabled:focus, .button.hollow.primary[disabled]:focus {
+.button.hollow.primary, .newsletter_signup .ngp-form.at input.hollow.primary[type=submit], .button.hollow.primary.disabled, .button.hollow.primary[disabled], .button.hollow.primary.disabled:hover, .button.hollow.primary[disabled]:hover, .button.hollow.primary.disabled:focus, .button.hollow.primary[disabled]:focus {
   border: 1px solid #476882;
   color: #476882;
 }
-.button.hollow.primary:hover, .button.hollow.primary:focus {
+.button.hollow.primary:hover, .newsletter_signup .ngp-form.at input.hollow.primary[type=submit]:hover, .button.hollow.primary:focus, .newsletter_signup .ngp-form.at input.hollow.primary[type=submit]:focus {
   border-color: #243441;
   color: #243441;
 }
-.button.hollow.secondary, .button.hollow.secondary.disabled, .button.hollow.secondary[disabled], .button.hollow.secondary.disabled:hover, .button.hollow.secondary[disabled]:hover, .button.hollow.secondary.disabled:focus, .button.hollow.secondary[disabled]:focus {
+.button.hollow.secondary, .newsletter_signup .ngp-form.at input.hollow.secondary[type=submit], .button.hollow.secondary.disabled, .button.hollow.secondary[disabled], .button.hollow.secondary.disabled:hover, .button.hollow.secondary[disabled]:hover, .button.hollow.secondary.disabled:focus, .button.hollow.secondary[disabled]:focus {
   border: 1px solid #767676;
   color: #767676;
 }
-.button.hollow.secondary:hover, .button.hollow.secondary:focus {
+.button.hollow.secondary:hover, .newsletter_signup .ngp-form.at input.hollow.secondary[type=submit]:hover, .button.hollow.secondary:focus, .newsletter_signup .ngp-form.at input.hollow.secondary[type=submit]:focus {
   border-color: #3b3b3b;
   color: #3b3b3b;
 }
-.button.hollow.success, .button.hollow.success.disabled, .button.hollow.success[disabled], .button.hollow.success.disabled:hover, .button.hollow.success[disabled]:hover, .button.hollow.success.disabled:focus, .button.hollow.success[disabled]:focus {
+.button.hollow.success, .newsletter_signup .ngp-form.at input.hollow.success[type=submit], .button.hollow.success.disabled, .button.hollow.success[disabled], .button.hollow.success.disabled:hover, .button.hollow.success[disabled]:hover, .button.hollow.success.disabled:focus, .button.hollow.success[disabled]:focus {
   border: 1px solid #3adb76;
   color: #3adb76;
 }
-.button.hollow.success:hover, .button.hollow.success:focus {
+.button.hollow.success:hover, .newsletter_signup .ngp-form.at input.hollow.success[type=submit]:hover, .button.hollow.success:focus, .newsletter_signup .ngp-form.at input.hollow.success[type=submit]:focus {
   border-color: #157539;
   color: #157539;
 }
-.button.hollow.warning, .button.hollow.warning.disabled, .button.hollow.warning[disabled], .button.hollow.warning.disabled:hover, .button.hollow.warning[disabled]:hover, .button.hollow.warning.disabled:focus, .button.hollow.warning[disabled]:focus {
+.button.hollow.warning, .newsletter_signup .ngp-form.at input.hollow.warning[type=submit], .button.hollow.warning.disabled, .button.hollow.warning[disabled], .button.hollow.warning.disabled:hover, .button.hollow.warning[disabled]:hover, .button.hollow.warning.disabled:focus, .button.hollow.warning[disabled]:focus {
   border: 1px solid #ffae00;
   color: #ffae00;
 }
-.button.hollow.warning:hover, .button.hollow.warning:focus {
+.button.hollow.warning:hover, .newsletter_signup .ngp-form.at input.hollow.warning[type=submit]:hover, .button.hollow.warning:focus, .newsletter_signup .ngp-form.at input.hollow.warning[type=submit]:focus {
   border-color: #805700;
   color: #805700;
 }
-.button.hollow.alert, .button.hollow.alert.disabled, .button.hollow.alert[disabled], .button.hollow.alert.disabled:hover, .button.hollow.alert[disabled]:hover, .button.hollow.alert.disabled:focus, .button.hollow.alert[disabled]:focus {
+.button.hollow.alert, .newsletter_signup .ngp-form.at input.hollow.alert[type=submit], .button.hollow.alert.disabled, .button.hollow.alert[disabled], .button.hollow.alert.disabled:hover, .button.hollow.alert[disabled]:hover, .button.hollow.alert.disabled:focus, .button.hollow.alert[disabled]:focus {
   border: 1px solid #cc4b37;
   color: #cc4b37;
 }
-.button.hollow.alert:hover, .button.hollow.alert:focus {
+.button.hollow.alert:hover, .newsletter_signup .ngp-form.at input.hollow.alert[type=submit]:hover, .button.hollow.alert:focus, .newsletter_signup .ngp-form.at input.hollow.alert[type=submit]:focus {
   border-color: #67251a;
   color: #67251a;
 }
-.button.clear, .button.clear:hover, .button.clear:focus, .button.clear.disabled, .button.clear.disabled:hover, .button.clear.disabled:focus, .button.clear[disabled], .button.clear[disabled]:hover, .button.clear[disabled]:focus {
+.button.clear, .newsletter_signup .ngp-form.at input.clear[type=submit], .button.clear:hover, .button.clear:focus, .button.clear.disabled, .button.clear.disabled:hover, .button.clear.disabled:focus, .button.clear[disabled], .button.clear[disabled]:hover, .button.clear[disabled]:focus {
   border-color: transparent;
   background-color: transparent;
 }
-.button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear.disabled:hover, .button.clear[disabled]:hover, .button.clear.disabled:focus, .button.clear[disabled]:focus {
+.button.clear, .newsletter_signup .ngp-form.at input.clear[type=submit], .button.clear.disabled, .button.clear[disabled], .button.clear.disabled:hover, .button.clear[disabled]:hover, .button.clear.disabled:focus, .button.clear[disabled]:focus {
   color: #476882;
 }
-.button.clear:hover, .button.clear:focus {
+.button.clear:hover, .newsletter_signup .ngp-form.at input.clear[type=submit]:hover, .button.clear:focus, .newsletter_signup .ngp-form.at input.clear[type=submit]:focus {
   color: #243441;
 }
-.button.clear.primary, .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary.disabled:hover, .button.clear.primary[disabled]:hover, .button.clear.primary.disabled:focus, .button.clear.primary[disabled]:focus {
+.button.clear.primary, .newsletter_signup .ngp-form.at input.clear.primary[type=submit], .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary.disabled:hover, .button.clear.primary[disabled]:hover, .button.clear.primary.disabled:focus, .button.clear.primary[disabled]:focus {
   color: #476882;
 }
-.button.clear.primary:hover, .button.clear.primary:focus {
+.button.clear.primary:hover, .newsletter_signup .ngp-form.at input.clear.primary[type=submit]:hover, .button.clear.primary:focus, .newsletter_signup .ngp-form.at input.clear.primary[type=submit]:focus {
   color: #243441;
 }
-.button.clear.secondary, .button.clear.secondary.disabled, .button.clear.secondary[disabled], .button.clear.secondary.disabled:hover, .button.clear.secondary[disabled]:hover, .button.clear.secondary.disabled:focus, .button.clear.secondary[disabled]:focus {
+.button.clear.secondary, .newsletter_signup .ngp-form.at input.clear.secondary[type=submit], .button.clear.secondary.disabled, .button.clear.secondary[disabled], .button.clear.secondary.disabled:hover, .button.clear.secondary[disabled]:hover, .button.clear.secondary.disabled:focus, .button.clear.secondary[disabled]:focus {
   color: #767676;
 }
-.button.clear.secondary:hover, .button.clear.secondary:focus {
+.button.clear.secondary:hover, .newsletter_signup .ngp-form.at input.clear.secondary[type=submit]:hover, .button.clear.secondary:focus, .newsletter_signup .ngp-form.at input.clear.secondary[type=submit]:focus {
   color: #3b3b3b;
 }
-.button.clear.success, .button.clear.success.disabled, .button.clear.success[disabled], .button.clear.success.disabled:hover, .button.clear.success[disabled]:hover, .button.clear.success.disabled:focus, .button.clear.success[disabled]:focus {
+.button.clear.success, .newsletter_signup .ngp-form.at input.clear.success[type=submit], .button.clear.success.disabled, .button.clear.success[disabled], .button.clear.success.disabled:hover, .button.clear.success[disabled]:hover, .button.clear.success.disabled:focus, .button.clear.success[disabled]:focus {
   color: #3adb76;
 }
-.button.clear.success:hover, .button.clear.success:focus {
+.button.clear.success:hover, .newsletter_signup .ngp-form.at input.clear.success[type=submit]:hover, .button.clear.success:focus, .newsletter_signup .ngp-form.at input.clear.success[type=submit]:focus {
   color: #157539;
 }
-.button.clear.warning, .button.clear.warning.disabled, .button.clear.warning[disabled], .button.clear.warning.disabled:hover, .button.clear.warning[disabled]:hover, .button.clear.warning.disabled:focus, .button.clear.warning[disabled]:focus {
+.button.clear.warning, .newsletter_signup .ngp-form.at input.clear.warning[type=submit], .button.clear.warning.disabled, .button.clear.warning[disabled], .button.clear.warning.disabled:hover, .button.clear.warning[disabled]:hover, .button.clear.warning.disabled:focus, .button.clear.warning[disabled]:focus {
   color: #ffae00;
 }
-.button.clear.warning:hover, .button.clear.warning:focus {
+.button.clear.warning:hover, .newsletter_signup .ngp-form.at input.clear.warning[type=submit]:hover, .button.clear.warning:focus, .newsletter_signup .ngp-form.at input.clear.warning[type=submit]:focus {
   color: #805700;
 }
-.button.clear.alert, .button.clear.alert.disabled, .button.clear.alert[disabled], .button.clear.alert.disabled:hover, .button.clear.alert[disabled]:hover, .button.clear.alert.disabled:focus, .button.clear.alert[disabled]:focus {
+.button.clear.alert, .newsletter_signup .ngp-form.at input.clear.alert[type=submit], .button.clear.alert.disabled, .button.clear.alert[disabled], .button.clear.alert.disabled:hover, .button.clear.alert[disabled]:hover, .button.clear.alert.disabled:focus, .button.clear.alert[disabled]:focus {
   color: #cc4b37;
 }
-.button.clear.alert:hover, .button.clear.alert:focus {
+.button.clear.alert:hover, .newsletter_signup .ngp-form.at input.clear.alert[type=submit]:hover, .button.clear.alert:focus, .newsletter_signup .ngp-form.at input.clear.alert[type=submit]:focus {
   color: #67251a;
 }
-.button.disabled, .button[disabled] {
+.button.disabled, .newsletter_signup .ngp-form.at input.disabled[type=submit], .button[disabled], .newsletter_signup .ngp-form.at input[disabled][type=submit] {
   opacity: 0.25;
   cursor: not-allowed;
 }
-.button.dropdown::after {
+.button.dropdown::after, .newsletter_signup .ngp-form.at input.dropdown[type=submit]::after {
   display: block;
   width: 0;
   height: 0;
@@ -5044,25 +5227,25 @@ ul.no-bullet, ol.no-bullet {
   float: right;
   margin-left: 1.276em;
 }
-.button.dropdown.hollow::after, .button.dropdown.clear::after {
+.button.dropdown.hollow::after, .newsletter_signup .ngp-form.at input.dropdown.hollow[type=submit]::after, .button.dropdown.clear::after, .newsletter_signup .ngp-form.at input.dropdown.clear[type=submit]::after {
   border-top-color: #476882;
 }
-.button.dropdown.hollow.primary::after, .button.dropdown.clear.primary::after {
+.button.dropdown.hollow.primary::after, .newsletter_signup .ngp-form.at input.dropdown.hollow.primary[type=submit]::after, .button.dropdown.clear.primary::after, .newsletter_signup .ngp-form.at input.dropdown.clear.primary[type=submit]::after {
   border-top-color: #476882;
 }
-.button.dropdown.hollow.secondary::after, .button.dropdown.clear.secondary::after {
+.button.dropdown.hollow.secondary::after, .newsletter_signup .ngp-form.at input.dropdown.hollow.secondary[type=submit]::after, .button.dropdown.clear.secondary::after, .newsletter_signup .ngp-form.at input.dropdown.clear.secondary[type=submit]::after {
   border-top-color: #767676;
 }
-.button.dropdown.hollow.success::after, .button.dropdown.clear.success::after {
+.button.dropdown.hollow.success::after, .newsletter_signup .ngp-form.at input.dropdown.hollow.success[type=submit]::after, .button.dropdown.clear.success::after, .newsletter_signup .ngp-form.at input.dropdown.clear.success[type=submit]::after {
   border-top-color: #3adb76;
 }
-.button.dropdown.hollow.warning::after, .button.dropdown.clear.warning::after {
+.button.dropdown.hollow.warning::after, .newsletter_signup .ngp-form.at input.dropdown.hollow.warning[type=submit]::after, .button.dropdown.clear.warning::after, .newsletter_signup .ngp-form.at input.dropdown.clear.warning[type=submit]::after {
   border-top-color: #ffae00;
 }
-.button.dropdown.hollow.alert::after, .button.dropdown.clear.alert::after {
+.button.dropdown.hollow.alert::after, .newsletter_signup .ngp-form.at input.dropdown.hollow.alert[type=submit]::after, .button.dropdown.clear.alert::after, .newsletter_signup .ngp-form.at input.dropdown.clear.alert[type=submit]::after {
   border-top-color: #cc4b37;
 }
-.button.arrow-only::after {
+.button.arrow-only::after, .newsletter_signup .ngp-form.at input.arrow-only[type=submit]::after {
   top: -0.1em;
   float: none;
   margin-left: 0;
@@ -5222,7 +5405,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .accordion-title {
   position: relative;
   display: block;
-  padding: 1.25rem 1rem;
+  padding: 1.05em 0;
   border: 0px solid #e6e6e6;
   border-bottom: 0;
   font-size: 1.25rem;
@@ -5234,7 +5417,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border-radius: 0 0 0 0;
 }
 .accordion-title:hover, .accordion-title:focus {
-  background-color: #e6e6e6;
+  background-color: transparent;
 }
 .accordion-title::before {
   position: absolute;
@@ -5249,7 +5432,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 
 .accordion-content {
   display: none;
-  padding: 1rem;
+  padding: 0;
   border: 0px solid #e6e6e6;
   border-bottom: 0;
   background-color: #fff;
@@ -5301,7 +5484,9 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   outline: 0;
 }
 .menu a,
-.menu .button {
+.menu .button,
+.menu .newsletter_signup .ngp-form.at input[type=submit],
+.newsletter_signup .ngp-form.at .menu input[type=submit] {
   line-height: 1;
   text-decoration: none;
   display: block;
@@ -6758,7 +6943,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   width: 100%;
   margin-right: 0;
 }
-.top-bar input.button {
+.top-bar input.button, .top-bar .newsletter_signup .ngp-form.at input[type=submit], .newsletter_signup .ngp-form.at .top-bar input[type=submit] {
   width: auto;
 }
 .top-bar .top-bar-left,
@@ -8506,28 +8691,48 @@ svg {
 }
 
 button,
-.button {
+.button,
+.newsletter_signup .ngp-form.at input[type=submit] {
   margin: 0;
 }
 button:hover,
-.button:hover {
+.button:hover,
+.newsletter_signup .ngp-form.at input[type=submit]:hover {
   color: #476882;
   background-color: #fff;
 }
 button.small,
-.button.small {
+.button.small,
+.newsletter_signup .ngp-form.at input.small[type=submit] {
   padding: 0.5715em 1.1645em;
 }
-button.tan,
-.button.tan {
+.btn-tan, .bg-blue .button-group .btn-wrap a.button,
+.bg-blue a.button {
   background-color: #C09C5B;
   border-color: #C09C5B;
   color: #483627;
 }
-button.tan:hover,
-.button.tan:hover {
+.btn-tan:hover, .bg-blue .button-group .btn-wrap a.button:hover,
+.bg-blue a.button:hover {
   background-color: #483627;
   color: #C09C5B;
+}
+
+.social-links li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.social-links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*********************
@@ -8571,21 +8776,464 @@ POSTS & CONTENT STYLES
   padding: 10px;
 }
 
-.wp-caption {
+.module {
+  padding: 1.938rem 0;
+  padding: clamp(1.938rem, 0.576rem + 6.812vw, 5.625rem) 0;
+}
+@media print, screen and (min-width: 40em) {
+  .module {
+    padding: 5.625rem 0;
+    padding: clamp(1.938rem, 0.576rem + 6.812vw, 5.625rem) 0;
+  }
+}
+.module.no-top-padding {
+  padding-top: 0 !important;
+}
+.module.no-bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+.wp-caption,
+.full_width_image.module,
+.image-slider,
+.video {
   max-width: 100%;
-  background: #eee;
-  padding: 5px;
 }
 .wp-caption img,
-.wp-caption svg {
+.wp-caption svg,
+.full_width_image.module img,
+.full_width_image.module svg,
+.image-slider img,
+.image-slider svg,
+.video img,
+.video svg {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-.wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 7px;
-  text-align: center;
+.wp-caption p.wp-caption-text, .wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=text], .newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=text],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=password],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=password],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=date],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=date],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=datetime],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime-local],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=datetime-local],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=month],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=month],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=week],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=week],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=email],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=email],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=number],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=number],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=search],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=search],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=tel],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=tel],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=time],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=time],
+.wp-caption .newsletter_signup .ngp-form.at input.wp-caption-text[type=url],
+.newsletter_signup .ngp-form.at .wp-caption input.wp-caption-text[type=url],
+.wp-caption .newsletter_signup .ngp-form.at textarea.wp-caption-text,
+.newsletter_signup .ngp-form.at .wp-caption textarea.wp-caption-text,
+.wp-caption figcaption,
+.wp-caption .caption-wrap,
+.full_width_image.module p.wp-caption-text,
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=text],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=text],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=password],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=password],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=date],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=date],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=datetime],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime-local],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=datetime-local],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=month],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=month],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=week],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=week],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=email],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=email],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=number],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=number],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=search],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=search],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=tel],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=tel],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=time],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=time],
+.full_width_image.module .newsletter_signup .ngp-form.at input.wp-caption-text[type=url],
+.newsletter_signup .ngp-form.at .full_width_image.module input.wp-caption-text[type=url],
+.full_width_image.module .newsletter_signup .ngp-form.at textarea.wp-caption-text,
+.newsletter_signup .ngp-form.at .full_width_image.module textarea.wp-caption-text,
+.full_width_image.module figcaption,
+.full_width_image.module .caption-wrap,
+.image-slider p.wp-caption-text,
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=text],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=text],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=password],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=password],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=date],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=date],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=datetime],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime-local],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=datetime-local],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=month],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=month],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=week],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=week],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=email],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=email],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=number],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=number],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=search],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=search],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=tel],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=tel],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=time],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=time],
+.image-slider .newsletter_signup .ngp-form.at input.wp-caption-text[type=url],
+.newsletter_signup .ngp-form.at .image-slider input.wp-caption-text[type=url],
+.image-slider .newsletter_signup .ngp-form.at textarea.wp-caption-text,
+.newsletter_signup .ngp-form.at .image-slider textarea.wp-caption-text,
+.image-slider figcaption,
+.image-slider .caption-wrap,
+.video p.wp-caption-text,
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=text],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=text],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=password],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=password],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=date],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=date],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=datetime],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=datetime-local],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=datetime-local],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=month],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=month],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=week],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=week],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=email],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=email],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=number],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=number],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=search],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=search],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=tel],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=tel],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=time],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=time],
+.video .newsletter_signup .ngp-form.at input.wp-caption-text[type=url],
+.newsletter_signup .ngp-form.at .video input.wp-caption-text[type=url],
+.video .newsletter_signup .ngp-form.at textarea.wp-caption-text,
+.newsletter_signup .ngp-form.at .video textarea.wp-caption-text,
+.video figcaption,
+.video .caption-wrap {
+  font-size: 0.9rem;
+  margin: 7px 0 0;
+}
+
+.bg-green,
+.bg-blue,
+.bg-dark-green {
+  color: #fff;
+}
+.bg-green p a, .bg-green .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .bg-green input[type=text] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=password] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=date] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=datetime] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=datetime-local] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=month] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=week] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=email] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=number] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=search] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=tel] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=time] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=url] a,
+.bg-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .bg-green textarea a,
+.bg-green h2,
+.bg-green h3,
+.bg-blue p a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=text] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=text] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=password] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=date] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=datetime] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=datetime-local] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=month] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=week] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=email] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=number] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=search] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=tel] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=time] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=url] a,
+.bg-blue .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .bg-blue textarea a,
+.bg-blue h2,
+.bg-blue h3,
+.bg-dark-green p a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=text] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=text] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=password] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=date] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=datetime] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=datetime-local] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=month] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=week] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=email] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=number] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=search] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=tel] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=time] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=url] a,
+.bg-dark-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .bg-dark-green textarea a,
+.bg-dark-green h2,
+.bg-dark-green h3 {
+  color: #fff;
+}
+.bg-green p a, .bg-green .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .bg-green input[type=text] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=password] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=date] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=datetime] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=datetime-local] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=month] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=week] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=email] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=number] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=search] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=tel] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=time] a,
+.bg-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .bg-green input[type=url] a,
+.bg-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .bg-green textarea a,
+.bg-green .cta-link a,
+.bg-blue p a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=text] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=text] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=password] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=date] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=datetime] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=datetime-local] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=month] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=week] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=email] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=number] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=search] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=tel] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=time] a,
+.bg-blue .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .bg-blue input[type=url] a,
+.bg-blue .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .bg-blue textarea a,
+.bg-blue .cta-link a,
+.bg-dark-green p a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=text] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=text] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=password] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=date] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=datetime] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=datetime-local] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=month] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=week] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=email] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=number] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=search] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=tel] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=time] a,
+.bg-dark-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .bg-dark-green input[type=url] a,
+.bg-dark-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .bg-dark-green textarea a,
+.bg-dark-green .cta-link a {
+  color: #fff;
+}
+.bg-green .cta-link a:after,
+.bg-blue .cta-link a:after,
+.bg-dark-green .cta-link a:after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='16px' height='12px' viewBox='0 0 16 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='arrow_right_alt_FILL0_wght300_GRAD0_opsz24' transform='translate(0.500025, 0.663228)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M12.11155,6.08674663 L0.75,6.08674663 C0.537183333,6.08674663 0.358983333,6.01495496 0.2154,5.87137163 C0.0718,5.7277883 0,5.5495883 0,5.33677163 C0,5.12395496 0.0718,4.94575496 0.2154,4.80217163 C0.358983333,4.6585883 0.537183333,4.58679663 0.75,4.58679663 L12.11155,4.58679663 L8.8192,1.29444663 C8.67048333,1.14572996 8.59709167,0.971696631 8.599025,0.772346631 C8.60094167,0.572996631 8.67433333,0.395754964 8.8192,0.240621631 C8.97433333,0.0855049639 9.15253333,0.00537996395 9.3538,0.000246630616 C9.55508333,-0.00488670272 9.73328333,0.0701132973 9.8884,0.225246631 L14.36725,4.70409663 C14.4608333,4.79767996 14.5268583,4.89639663 14.565325,5.00024663 C14.6037917,5.10407996 14.623025,5.21625496 14.623025,5.33677163 C14.623025,5.4572883 14.6037917,5.5694633 14.565325,5.67329663 C14.5268583,5.77714663 14.4608333,5.8758633 14.36725,5.96944663 L9.8884,10.4482966 C9.7397,10.5970133 9.56310833,10.6704133 9.358625,10.6685332 C9.15414167,10.6665633 8.97433333,10.5880383 8.8192,10.4329216 C8.67433333,10.2777883 8.59933333,10.1021466 8.5942,9.90599663 C8.58908333,9.70984663 8.66408333,9.5342133 8.8192,9.37909663 L12.11155,6.08674663 Z' id='Path' fill='%23ffffff'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.bg-green .download-link:before,
+.bg-blue .download-link:before,
+.bg-dark-green .download-link:before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='25px' height='25px' viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Edownload_FILL0_wght300_GRAD0_opsz24%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='download_FILL0_wght300_GRAD0_opsz24' transform='translate(0.500025, 0.500025)' fill='%23ffffff' fill-rule='nonzero'%3E%3Cpath d='M11.999975,17.4584218 C11.8071481,17.4584218 11.6276679,17.4276485 11.4615343,17.3661017 C11.2953741,17.3045816 11.1374273,17.1989415 10.9876937,17.0491813 L6.01232752,12.0738551 C5.77438055,11.8359081 5.65695374,11.5574544 5.65998753,11.238494 C5.66311375,10.9195336 5.78054056,10.6359466 6.01232752,10.387733 C6.26054116,10.139546 6.54566152,10.0113458 6.86768858,10.0031325 C7.18974232,9.99491916 7.47487601,10.1149193 7.72308965,10.363133 L10.8000135,13.4400568 L10.8000135,1.2000015 C10.8000135,0.859494408 10.9148803,0.574374051 11.1446139,0.344640431 C11.3743476,0.114880144 11.6594679,0 11.999975,0 C12.3404821,0 12.6256024,0.114880144 12.8553361,0.344640431 C13.0850697,0.574374051 13.1999365,0.859494408 13.1999365,1.2000015 L13.1999365,13.4400568 L16.2768603,10.363133 C16.5148073,10.125186 16.7973677,10.0077458 17.1245414,10.0108125 C17.4517151,10.0139059 17.7394088,10.139546 17.9876225,10.387733 C18.2194094,10.6359466 18.3393963,10.9169736 18.3475829,11.230814 C18.3557963,11.5446544 18.2358095,11.8256681 17.9876225,12.0738551 L13.0122563,17.0491813 C12.8625227,17.1989415 12.7045759,17.3045816 12.5384157,17.3661017 C12.3722821,17.4276485 12.1928019,17.4584218 11.999975,17.4584218 Z M2.89232362,23.99995 C2.08410927,23.99995 1.40000175,23.7199496 0.84000105,23.1599489 C0.28000035,22.5999482 1.1368698e-15,21.9158407 1.1368698e-15,21.1076264 L1.1368698e-15,17.9691825 C1.1368698e-15,17.6286754 0.114880144,17.343555 0.344640431,17.1138214 C0.574374051,16.8840878 0.859494408,16.769221 1.2000015,16.769221 C1.54050859,16.769221 1.82562895,16.8840878 2.05536257,17.1138214 C2.28509619,17.343555 2.399963,17.6286754 2.399963,17.9691825 L2.399963,21.1076264 C2.399963,21.2307199 2.45124306,21.34356 2.55380319,21.4461468 C2.65638999,21.5487069 2.76923013,21.599987 2.89232362,21.599987 L21.1076264,21.599987 C21.2307199,21.599987 21.34356,21.5487069 21.4461468,21.4461468 C21.5487069,21.34356 21.599987,21.2307199 21.599987,21.1076264 L21.599987,17.9691825 C21.599987,17.6286754 21.7148538,17.343555 21.9445874,17.1138214 C22.1743211,16.8840878 22.4594414,16.769221 22.7999485,16.769221 C23.1404556,16.769221 23.4255759,16.8840878 23.6553096,17.1138214 C23.8850699,17.343555 23.99995,17.6286754 23.99995,17.9691825 L23.99995,21.1076264 C23.99995,21.9158407 23.7199496,22.5999482 23.1599489,23.1599489 C22.5999482,23.7199496 21.9158407,23.99995 21.1076264,23.99995 L2.89232362,23.99995 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.bg-green blockquote,
+.bg-blue blockquote,
+.bg-dark-green blockquote {
+  border-color: #fff;
+}
+.bg-green blockquote:before,
+.bg-blue blockquote:before,
+.bg-dark-green blockquote:before {
+  content: url('data:image/svg+xml,<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.69231 16.3844C9.69231 19.1644 7.84615 20.9404 5.23077 20.9404C2 20.9404 0 18.1605 0 13.5273C0 5.72808 5.61539 0.94043 8.61539 0.94043C9.38462 0.94043 9.69231 1.32653 9.69231 1.78985C9.69231 2.25317 9.23077 2.71649 8.46154 3.33425C6.76923 4.64699 4.38462 6.88638 4.38462 11.2879V11.674H4.92308C7.84615 11.674 9.69231 13.6817 9.69231 16.3844ZM24 16.3844C24 19.1644 22.0769 20.9404 19.5385 20.9404C16.3077 20.9404 14.3077 18.1605 14.3077 13.5273C14.3077 5.72808 19.9231 0.94043 22.9231 0.94043C23.6154 0.94043 23.9231 1.32653 23.9231 1.78985C23.9231 2.25317 23.4615 2.71649 22.6923 3.33425C21.0769 4.64699 18.6923 6.88638 18.6923 11.2879V11.674H19.2308C22.0769 11.674 24 13.6817 24 16.3844Z" fill="%23ffffff"/></svg>');
+}
+.bg-green blockquote p, .bg-green blockquote .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .bg-green blockquote input[type=text],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=password],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=date],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=datetime],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=datetime-local],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=month],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=week],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=email],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=number],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=search],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=tel],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=time],
+.bg-green blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .bg-green blockquote input[type=url],
+.bg-green blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .bg-green blockquote textarea,
+.bg-green blockquote cite.citation,
+.bg-blue blockquote p,
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=text],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=password],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=date],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=datetime],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=datetime-local],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=month],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=week],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=email],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=number],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=search],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=tel],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=time],
+.bg-blue blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .bg-blue blockquote input[type=url],
+.bg-blue blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .bg-blue blockquote textarea,
+.bg-blue blockquote cite.citation,
+.bg-dark-green blockquote p,
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=text],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=password],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=date],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=datetime],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=datetime-local],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=month],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=week],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=email],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=number],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=search],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=tel],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=time],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote input[type=url],
+.bg-dark-green blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .bg-dark-green blockquote textarea,
+.bg-dark-green blockquote cite.citation {
+  color: #fff;
 }
 
 .post-password-form input[type=submit] {
@@ -8876,7 +9524,33 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-.commentlist .comment_content p {
+.commentlist .comment_content p, .commentlist .comment_content .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .commentlist .comment_content input[type=text],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=password],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=date],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=datetime],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=datetime-local],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=month],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=week],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=email],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=number],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=search],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=tel],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=time],
+.commentlist .comment_content .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .commentlist .comment_content input[type=url],
+.commentlist .comment_content .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .commentlist .comment_content textarea {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
@@ -8999,38 +9673,96 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 
 h1,
 .h1 {
-  font-size: clamp(2rem, 1.564rem + 1.937vw, 3rem);
+  font-size: clamp(2rem, 1.63rem + 1.848vw, 3rem);
 }
 
 h2,
 .h2 {
-  font-size: clamp(1.375rem, 0.885rem + 2.179vw, 2.5rem);
+  font-size: clamp(1.375rem, 0.959rem + 2.079vw, 2.5rem);
 }
 
 h3,
-.h3 {
-  font-size: clamp(1rem, 0.782rem + 0.969vw, 1.5rem);
+.h3,
+.module.wysiwyg_button blockquote p,
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=text],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=password],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=date],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime-local],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=month],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=week],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=email],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=number],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=search],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=tel],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=time],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=url],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote textarea,
+.newsletter_signup .ngp-form.at fieldset legend {
+  font-size: clamp(1.125rem, 0.986rem + 0.693vw, 1.5rem);
 }
 
 h4,
-.h4 {
-  font-size: clamp(1.125rem, 1.071rem + 0.242vw, 1.25rem);
+.h4,
+.module.wysiwyg_button cite.citation {
+  font-size: clamp(1.125rem, 1.079rem + 0.231vw, 1.25rem);
 }
 
-p,
+p, .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at textarea,
 .p,
 ul,
 ol {
+  margin-bottom: 0.92em;
   font-size: 1rem;
-  font-size: clamp(1rem, 0.913rem + 0.387vw, 1.2rem);
+  font-size: clamp(1rem, 0.926rem + 0.37vw, 1.2rem);
 }
 @media print, screen and (min-width: 40em) {
-  p,
+  p, .newsletter_signup .ngp-form.at input[type=text],
+  .newsletter_signup .ngp-form.at input[type=password],
+  .newsletter_signup .ngp-form.at input[type=date],
+  .newsletter_signup .ngp-form.at input[type=datetime],
+  .newsletter_signup .ngp-form.at input[type=datetime-local],
+  .newsletter_signup .ngp-form.at input[type=month],
+  .newsletter_signup .ngp-form.at input[type=week],
+  .newsletter_signup .ngp-form.at input[type=email],
+  .newsletter_signup .ngp-form.at input[type=number],
+  .newsletter_signup .ngp-form.at input[type=search],
+  .newsletter_signup .ngp-form.at input[type=tel],
+  .newsletter_signup .ngp-form.at input[type=time],
+  .newsletter_signup .ngp-form.at input[type=url],
+  .newsletter_signup .ngp-form.at textarea,
   .p,
   ul,
   ol {
     font-size: 1.2rem;
-    font-size: clamp(1rem, 0.913rem + 0.387vw, 1.2rem);
+    font-size: clamp(1rem, 0.926rem + 0.37vw, 1.2rem);
   }
 }
 
@@ -9056,6 +9788,10 @@ ol {
 
 .color-dark-green {
   color: #185100;
+}
+
+.color-tan {
+  color: #C09C5B;
 }
 
 .color-brown {
@@ -9413,50 +10149,9 @@ article.post:last-of-type,
 article.event-cpt:last-of-type {
   margin-bottom: 1.75rem;
 }
-article.post a:not(.button),
-article.event-cpt a:not(.button) {
-  color: #8B7751;
-}
-article.post a:not(.button) .entry-header,
-article.event-cpt a:not(.button) .entry-header {
-  padding-top: 1rem;
-}
-article.post a:not(.button) .date,
-article.event-cpt a:not(.button) .date {
-  padding-bottom: 0.6rem;
-}
-article.post a:not(.button) .date:not(.color-white),
-article.event-cpt a:not(.button) .date:not(.color-white) {
-  color: #483627;
-}
-article.post a:not(.button) .h3,
-article.event-cpt a:not(.button) .h3 {
-  margin-bottom: 0.5em;
-}
-article.post a:not(.button) svg,
-article.event-cpt a:not(.button) svg {
-  -webkit-transition: -webkit-transform 0.35s ease;
-  transition: -webkit-transform 0.35s ease;
-  transition: transform 0.35s ease;
-  transition: transform 0.35s ease, -webkit-transform 0.35s ease;
-}
-article.post a:not(.button) svg path,
-article.event-cpt a:not(.button) svg path {
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease;
-}
-article.post a:not(.button):hover .h3,
-article.event-cpt a:not(.button):hover .h3 {
-  text-decoration: underline;
-}
-article.post a:not(.button):hover svg,
-article.event-cpt a:not(.button):hover svg {
-  -webkit-transform: translateX(23px);
-          transform: translateX(23px);
-}
-article.post a:not(.button):hover svg path,
-article.event-cpt a:not(.button):hover svg path {
-  fill: #9E4541;
+
+.h-100 {
+  height: 100%;
 }
 
 .has-object-fit {
@@ -9492,6 +10187,16 @@ article.event-cpt a:not(.button):hover svg path {
   background-color: #5C8000;
 }
 
+.home-hero h1 {
+  line-height: 1.2;
+}
+.home-hero h1 span.font-body {
+  text-transform: uppercase;
+  font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
+  display: inline-block;
+  -webkit-transform: translateY(-0.1em);
+          transform: translateY(-0.1em);
+}
 .home-hero .img-wrap img.mask {
   position: absolute;
   top: 0;
@@ -9506,7 +10211,7 @@ article.event-cpt a:not(.button):hover svg path {
   background-size: cover;
   background-attachment: fixed;
 }
-.newsletter_signup.has-bg-img:after {
+.newsletter_signup.has-bg-img:before {
   content: "";
   display: block;
   position: absolute;
@@ -9517,8 +10222,106 @@ article.event-cpt a:not(.button):hover svg path {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-
-.wysiwyg_button .download-link {
+.newsletter_signup .inner {
+  padding: 2.55rem 4.4rem 1.35rem;
+  padding: 2.55rem clamp(0rem, -1.626rem + 8.129vw, 4.4rem) 1.35rem;
+}
+.newsletter_signup .ngp-form.at .at-row > [class^=at-] {
+  margin: 0 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+@media print, screen and (min-width: 40em) {
+  .newsletter_signup .ngp-form.at .at-row > [class^=at-] {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+.newsletter_signup .ngp-form.at .at-row > .Prefix {
+  min-width: 0;
+}
+.newsletter_signup .ngp-form.at label {
+  color: #000;
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+  font-family: "indivisible", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at textarea {
+  padding: 1rem;
+  font-family: "indivisible", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  border-color: #C09C5B;
+  border-radius: 0;
+  background-color: rgba(192, 156, 91, 0.0998);
+}
+.newsletter_signup .ngp-form.at input[type=text]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=password]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=date]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=datetime]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=datetime-local]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=month]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=week]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=email]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=number]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=search]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=tel]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=time]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at input[type=url]::-webkit-input-placeholder, .newsletter_signup .ngp-form.at textarea::-webkit-input-placeholder {
+  color: #000;
+}
+.newsletter_signup .ngp-form.at input[type=text]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=password]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=date]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=datetime]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=datetime-local]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=month]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=week]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=email]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=number]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=search]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=tel]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=time]::-moz-placeholder, .newsletter_signup .ngp-form.at input[type=url]::-moz-placeholder, .newsletter_signup .ngp-form.at textarea::-moz-placeholder {
+  color: #000;
+}
+.newsletter_signup .ngp-form.at input[type=text]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=password]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=date]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=datetime]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=datetime-local]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=month]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=week]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=email]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=number]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=search]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=tel]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=time]:-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=url]:-ms-input-placeholder, .newsletter_signup .ngp-form.at textarea:-ms-input-placeholder {
+  color: #000;
+}
+.newsletter_signup .ngp-form.at input[type=text]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=password]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=date]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=datetime]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=datetime-local]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=month]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=week]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=email]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=number]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=search]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=tel]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=time]::-ms-input-placeholder, .newsletter_signup .ngp-form.at input[type=url]::-ms-input-placeholder, .newsletter_signup .ngp-form.at textarea::-ms-input-placeholder {
+  color: #000;
+}
+.newsletter_signup .ngp-form.at input[type=text]::placeholder,
+.newsletter_signup .ngp-form.at input[type=password]::placeholder,
+.newsletter_signup .ngp-form.at input[type=date]::placeholder,
+.newsletter_signup .ngp-form.at input[type=datetime]::placeholder,
+.newsletter_signup .ngp-form.at input[type=datetime-local]::placeholder,
+.newsletter_signup .ngp-form.at input[type=month]::placeholder,
+.newsletter_signup .ngp-form.at input[type=week]::placeholder,
+.newsletter_signup .ngp-form.at input[type=email]::placeholder,
+.newsletter_signup .ngp-form.at input[type=number]::placeholder,
+.newsletter_signup .ngp-form.at input[type=search]::placeholder,
+.newsletter_signup .ngp-form.at input[type=tel]::placeholder,
+.newsletter_signup .ngp-form.at input[type=time]::placeholder,
+.newsletter_signup .ngp-form.at input[type=url]::placeholder,
+.newsletter_signup .ngp-form.at textarea::placeholder {
+  color: #000;
+}
+.newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at input[type=url] {
+  height: 44px;
+}
+.module.wysiwyg_button {
+  padding: 1.938rem 0;
+  padding: clamp(1.938rem, 0.576rem + 6.812vw, 5.625rem) 0;
+}
+@media print, screen and (min-width: 40em) {
+  .module.wysiwyg_button {
+    padding: 5.625rem 0;
+    padding: clamp(1.938rem, 0.576rem + 6.812vw, 5.625rem) 0;
+  }
+}
+.module.wysiwyg_button .download-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -9527,7 +10330,7 @@ article.event-cpt a:not(.button):hover svg path {
           align-items: center;
   position: relative;
 }
-.wysiwyg_button .download-link:before {
+.module.wysiwyg_button .download-link:before {
   content: "";
   display: block;
   position: absolute;
@@ -9538,10 +10341,10 @@ article.event-cpt a:not(.button):hover svg path {
   background-repeat: no-repeat;
   margin-right: 10px;
 }
-.wysiwyg_button .download-link a {
+.module.wysiwyg_button .download-link a {
   padding-left: 2rem;
 }
-.wysiwyg_button .cta-link {
+.module.wysiwyg_button .cta-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -9550,15 +10353,15 @@ article.event-cpt a:not(.button):hover svg path {
           align-items: center;
   position: relative;
 }
-.wysiwyg_button .cta-link a {
+.module.wysiwyg_button .cta-link a {
+  text-decoration: none;
   display: inline-block;
-  color: #9E4541;
   font-weight: 600;
   padding-right: 1.85rem;
   position: relative;
   z-index: 1;
 }
-.wysiwyg_button .cta-link a:after {
+.module.wysiwyg_button .cta-link a:after {
   content: "";
   display: block;
   position: absolute;
@@ -9572,24 +10375,390 @@ article.event-cpt a:not(.button):hover svg path {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.wysiwyg_button .cta-link a:hover:after {
+.module.wysiwyg_button .cta-link a:hover:after {
   -webkit-transform: translateX(0px) translateY(-50%);
           transform: translateX(0px) translateY(-50%);
 }
-.wysiwyg_button .button-group .btn-wrap {
+.module.wysiwyg_button blockquote {
+  border-left: 0;
+  border-top: 1px solid #80A6BF;
+  border-bottom: 1px solid #80A6BF;
+  padding: 1.4rem 0 1.2rem;
+}
+.module.wysiwyg_button blockquote:before {
+  display: inline-block;
+  margin-bottom: 2px;
+  content: url('data:image/svg+xml,<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.69231 16.3844C9.69231 19.1644 7.84615 20.9404 5.23077 20.9404C2 20.9404 0 18.1605 0 13.5273C0 5.72808 5.61539 0.94043 8.61539 0.94043C9.38462 0.94043 9.69231 1.32653 9.69231 1.78985C9.69231 2.25317 9.23077 2.71649 8.46154 3.33425C6.76923 4.64699 4.38462 6.88638 4.38462 11.2879V11.674H4.92308C7.84615 11.674 9.69231 13.6817 9.69231 16.3844ZM24 16.3844C24 19.1644 22.0769 20.9404 19.5385 20.9404C16.3077 20.9404 14.3077 18.1605 14.3077 13.5273C14.3077 5.72808 19.9231 0.94043 22.9231 0.94043C23.6154 0.94043 23.9231 1.32653 23.9231 1.78985C23.9231 2.25317 23.4615 2.71649 22.6923 3.33425C21.0769 4.64699 18.6923 6.88638 18.6923 11.2879V11.674H19.2308C22.0769 11.674 24 13.6817 24 16.3844Z" fill="%23C09C5B"/></svg>');
+}
+.module.wysiwyg_button blockquote p, .module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=text],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=password],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=date],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=datetime-local],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=month],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=week],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=email],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=number],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=search],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=tel],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=time],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote input[type=url],
+.module.wysiwyg_button blockquote .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button blockquote textarea {
+  color: #483627;
+}
+.module.wysiwyg_button cite.citation {
+  font-family: "indivisible", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: italic;
+  color: #483627;
+  margin-top: 1.55em;
+}
+.module.wysiwyg_button .button-group .btn-wrap {
   margin-bottom: 24px;
 }
 @media print, screen and (min-width: 40em) {
-  .wysiwyg_button .button-group .btn-wrap {
+  .module.wysiwyg_button .button-group .btn-wrap {
     margin-bottom: 32px;
   }
 }
+.module.wysiwyg_button p a, .module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=text] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=password] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=date] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=datetime] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=datetime-local] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=month] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=week] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=email] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=number] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=search] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=tel] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=time] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button input[type=url] a,
+.module.wysiwyg_button .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button textarea a {
+  color: #476882;
+  text-decoration: underline;
+}
+.module.wysiwyg_button h2 {
+  margin-bottom: 0.325em;
+}
+.module.wysiwyg_button h3 {
+  margin-top: 1.62em;
+  margin-bottom: 0.6em;
+}
+.module.wysiwyg_button.bg-white svg path, .module.wysiwyg_button.bg-tan svg path {
+  fill: #111111;
+}
+.module.wysiwyg_button.bg-white .cta-link a, .module.wysiwyg_button.bg-tan .cta-link a {
+  color: #9E4541;
+}
+.module.wysiwyg_button.bg-white h2 {
+  color: #5C8000;
+}
+.module.wysiwyg_button.bg-white h3 {
+  color: #8B7751;
+}
+.module.wysiwyg_button.bg-tan p a, .module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=text] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=password] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=date] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=datetime] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=datetime-local] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=month] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=week] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=email] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=number] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=search] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=tel] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=time] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan input[type=url] a,
+.module.wysiwyg_button.bg-tan .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-tan textarea a,
+.module.wysiwyg_button.bg-tan h2,
+.module.wysiwyg_button.bg-tan h3 {
+  color: #483627;
+}
+.module.wysiwyg_button.bg-green, .module.wysiwyg_button.bg-blue, .module.wysiwyg_button.bg-dark-green {
+  color: #fff;
+}
+.module.wysiwyg_button.bg-green p a, .module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=text] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=password] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=date] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=datetime] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=datetime-local] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=month] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=week] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=email] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=number] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=search] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=tel] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=time] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=url] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green textarea a,
+.module.wysiwyg_button.bg-green h2,
+.module.wysiwyg_button.bg-green h3, .module.wysiwyg_button.bg-blue p a, .module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=text] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=password] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=date] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=datetime] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=datetime-local] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=month] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=week] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=email] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=number] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=search] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=tel] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=time] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=url] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue textarea a,
+.module.wysiwyg_button.bg-blue h2,
+.module.wysiwyg_button.bg-blue h3, .module.wysiwyg_button.bg-dark-green p a, .module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=text] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=password] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=date] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=datetime] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=datetime-local] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=month] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=week] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=email] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=number] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=search] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=tel] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=time] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=url] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green textarea a,
+.module.wysiwyg_button.bg-dark-green h2,
+.module.wysiwyg_button.bg-dark-green h3 {
+  color: #fff;
+}
+.module.wysiwyg_button.bg-green p a, .module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=text] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=password] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=date] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=datetime] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=datetime-local] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=month] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=week] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=email] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=number] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=search] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=tel] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=time] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green input[type=url] a,
+.module.wysiwyg_button.bg-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-green textarea a,
+.module.wysiwyg_button.bg-green .cta-link a, .module.wysiwyg_button.bg-blue p a, .module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=text] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=password] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=date] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=datetime] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=datetime-local] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=month] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=week] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=email] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=number] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=search] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=tel] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=time] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue input[type=url] a,
+.module.wysiwyg_button.bg-blue .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-blue textarea a,
+.module.wysiwyg_button.bg-blue .cta-link a, .module.wysiwyg_button.bg-dark-green p a, .module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=text] a, .newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=text] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=password] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=password] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=date] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=date] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=datetime] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=datetime-local] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=datetime-local] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=month] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=month] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=week] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=week] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=email] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=email] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=number] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=number] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=search] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=search] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=tel] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=tel] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=time] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=time] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at input[type=url] a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green input[type=url] a,
+.module.wysiwyg_button.bg-dark-green .newsletter_signup .ngp-form.at textarea a,
+.newsletter_signup .ngp-form.at .module.wysiwyg_button.bg-dark-green textarea a,
+.module.wysiwyg_button.bg-dark-green .cta-link a {
+  color: #fff;
+}
 
+.accordion.module h2 {
+  color: #5C8000;
+  margin-bottom: 0.55em;
+}
+.accordion.module .accordion {
+  border-top: 1px solid rgba(128, 166, 191, 0.25);
+}
+.accordion.module .accordion-item {
+  border-bottom: 1px solid rgba(128, 166, 191, 0.25);
+}
+.accordion.module .accordion-item .accordion-title.h4, .accordion.module .accordion-item .module.wysiwyg_button cite.accordion-title.citation, .module.wysiwyg_button .accordion.module .accordion-item cite.accordion-title.citation {
+  margin-bottom: 0;
+}
+.accordion.module .accordion-item .accordion-title.h4:before, .accordion.module .accordion-item .module.wysiwyg_button cite.accordion-title.citation:before, .module.wysiwyg_button .accordion.module .accordion-item cite.accordion-title.citation:before {
+  content: url('data:image/svg+xml,<svg width="18" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.996 10c-.203 0-.392-.032-.567-.095a1.398 1.398 0 0 1-.5-.329L.36 2.111A1.195 1.195 0 0 1 0 1.245 1.165 1.165 0 0 1 .36.36c.243-.24.54-.36.886-.36.348 0 .644.12.888.36l6.863 6.764L15.858.361a1.23 1.23 0 0 1 .88-.353 1.2 1.2 0 0 1 .895.353c.244.24.366.532.366.875 0 .343-.122.635-.366.876l-7.572 7.464c-.139.143-.309.255-.498.329a1.636 1.636 0 0 1-.567.095Z" fill="%23483627"/></svg>');
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.accordion.module .accordion-item .accordion-title.h4:hover, .accordion.module .accordion-item .module.wysiwyg_button cite.accordion-title.citation:hover, .module.wysiwyg_button .accordion.module .accordion-item cite.accordion-title.citation:hover {
+  color: #483627;
+}
+.accordion.module .accordion-item.is-active .accordion-title {
+  color: #483627;
+}
+.accordion.module .accordion-item.is-active .accordion-title:before {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+.accordion.module .accordion-item .accordion-content .inner {
+  margin-top: -7px;
+}
+
+.image-slider.module .swiper-btn {
+  height: auto;
+  width: auto;
+}
 .image-slider.module .swiper-btn:after {
   display: none;
 }
+.image-slider.module .swiper-btn svg path {
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+.image-slider.module .swiper-btn:hover svg path {
+  fill: #476882;
+}
+.image-slider.module figcaption {
+  padding: 0 68px;
+}
 .image-slider.module .swiper-pagination {
   position: static;
+  padding-top: 1rem;
+  padding-bottom: 0.1rem;
+}
+.image-slider.module .swiper-pagination .swiper-pagination-bullet {
+  background-color: #A19B96;
+  opacity: 1;
+  margin: 0.5rem;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.image-slider.module .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+  background-color: #476882;
+}
+.image-slider.module .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #9E4541;
+}
+.image-slider.module .image-slider-swiper .swiper-container {
+  margin: 0 68px;
 }
 
 .people_cards h2 {
@@ -9597,5 +10766,258 @@ article.event-cpt a:not(.button):hover svg path {
 }
 .people_cards h3 {
   color: #5C8000;
+}
+
+.img-copy-cta .img-wrap {
+  padding-left: 0;
+}
+@media print, screen and (max-width: 23.43625em) {
+  .img-copy-cta .img-wrap {
+    padding: 0;
+  }
+}
+.img-copy-cta .right > div {
+  padding: 3rem 0;
+}
+
+.cta_cards_stats {
+  padding-bottom: 0;
+}
+.cta_cards_stats .bg-tan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 133px;
+}
+.cta_cards_stats img.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cta_cards_stats .top {
+  padding-top: 2.063rem;
+  padding-top: clamp(2.063rem, 1.384rem + 3.395vw, 3.9rem);
+}
+@media print, screen and (min-width: 40em) {
+  .cta_cards_stats .top {
+    padding-top: 3.9rem;
+    padding-top: clamp(2.063rem, 1.384rem + 3.395vw, 3.9rem);
+  }
+}
+.cta_cards_stats .top h2 {
+  margin-bottom: 2.063rem;
+  margin-bottom: clamp(2.063rem, 1.393rem + 3.349vw, 3.875rem);
+}
+@media print, screen and (min-width: 40em) {
+  .cta_cards_stats .top h2 {
+    margin-bottom: 3.875rem;
+    margin-bottom: clamp(2.063rem, 1.393rem + 3.349vw, 3.875rem);
+  }
+}
+.cta_cards_stats .top .cta-card .inner {
+  -webkit-box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+.cta_cards_stats .top .cta-card .inner,
+.cta_cards_stats .top .cta-card .text-wrap,
+.cta_cards_stats .top .cta-card .text-wrap h3,
+.cta_cards_stats .top .cta-card .text-wrap p,
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=text],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=password],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=date],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=datetime],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=datetime-local],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=month],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=week],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=email],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=number],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=search],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=tel],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=time],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=url],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap textarea,
+.cta_cards_stats .top .cta-card .title-wrap,
+.cta_cards_stats .top .cta-card .title-wrap svg path {
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+.cta_cards_stats .top .cta-card .text-wrap p, .cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=text], .newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=text],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=password],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=date],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=datetime],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=datetime-local],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=month],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=week],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=email],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=number],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=search],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=tel],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=time],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap input[type=url],
+.cta_cards_stats .top .cta-card .text-wrap .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card .text-wrap textarea {
+  margin: 0;
+}
+.cta_cards_stats .top .cta-card a.inner:hover {
+  background-color: #476882;
+}
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap,
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap {
+  color: #fff;
+}
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap h3,
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap p,
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=text],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=password],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=date],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=datetime],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=datetime-local],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=month],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=week],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=email],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=number],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=search],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=tel],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=time],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap input[type=url],
+.cta_cards_stats .top .cta-card a.inner:hover .text-wrap .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .text-wrap textarea,
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap h3,
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap p,
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=text],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=text],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=password],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=password],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=date],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=date],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=datetime],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=datetime],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=datetime-local],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=datetime-local],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=month],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=month],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=week],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=week],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=email],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=email],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=number],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=number],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=search],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=search],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=tel],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=tel],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=time],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=time],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at input[type=url],
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap input[type=url],
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap .newsletter_signup .ngp-form.at textarea,
+.newsletter_signup .ngp-form.at .cta_cards_stats .top .cta-card a.inner:hover .title-wrap textarea {
+  color: #fff;
+}
+.cta_cards_stats .top .cta-card a.inner:hover .title-wrap svg path {
+  fill: #fff;
+}
+.cta_cards_stats .top .cta-card a.inner:hover svg {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+.cta_cards_stats .top .cta-card a.inner:hover svg path {
+  fill: #fff;
+}
+.cta_cards_stats .top .cta-card .text-wrap {
+  padding: 1.5rem;
+}
+.cta_cards_stats .top .cta-card .title-wrap {
+  padding: 0.25rem 1.5rem 1.5rem;
+  font-size: 1.125rem;
+  font-size: clamp(0.938rem, 0.868rem + 0.346vw, 1.125rem);
+  font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.cta_cards_stats .top .cta-card .title-wrap span {
+  display: inline-block;
+  margin-right: 0.4em;
+}
+.cta_cards_stats .top .cta-card .title-wrap svg {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.cta_cards_stats .top .cta-card .title-wrap svg path {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.cta_cards_stats .bottom {
+  z-index: -1;
+  padding-top: 133px;
+  padding-bottom: 72px;
+  margin-top: -133px;
+}
+.cta_cards_stats .bottom .grid-container {
+  padding-top: 80px;
+}
+.cta_cards_stats .bottom .cta-card .font-header {
+  font-size: 3rem;
+  font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
+}
+@media print, screen and (min-width: 40em) {
+  .cta_cards_stats .bottom .cta-card .font-header {
+    font-size: 4.5rem;
+    font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
+  }
+}
+.cta_cards_stats .bottom .cta-card .font-header:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #C09C5B;
+  margin: 0 auto 0.65rem;
 }
 /*# sourceMappingURL=style.min.css.map */

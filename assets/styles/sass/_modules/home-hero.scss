@@ -1,4 +1,13 @@
 .home-hero {
+	h1 {
+		line-height: 1.2;
+		span.font-body {
+			text-transform: uppercase;
+			font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
+			display: inline-block;
+			transform: translateY(-0.1em);
+		}
+	}
 	.img-wrap {
 		img.mask {
 			position: absolute;

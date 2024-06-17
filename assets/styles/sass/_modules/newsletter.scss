@@ -2,7 +2,7 @@
 	&.has-bg-img {
 		background-size: cover;
 		background-attachment: fixed;
-		&:after {
+		&:before {
 			content: '';
 			display: block;
 			position: absolute;
@@ -11,6 +11,73 @@
 			width: 100%;
 			height: 100%;
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
+		}
+	}
+	.inner {
+		padding: 2.55rem 4.4rem 1.35rem;
+		padding: 2.55rem clamp(0rem, -1.626rem + 8.129vw, 4.4rem) 1.35rem;
+	}
+	.ngp-form.at {
+		.at-row>[class^=at-] {
+			margin: 0 1rem;
+			flex: 1 1 100%;
+			@include breakpoint(medium) {
+				flex: 1;
+			}
+		}
+		.at-row>.Prefix {
+			min-width: 0;
+		}
+		fieldset legend {
+			@extend .h3;
+		}
+		label {
+			color: $black;
+			font-size: rem-calc(14.4);
+			line-height: rem-calc(21.6);
+			font-family: $font-body;
+		}
+		input[type=text], 
+		input[type=password], 
+		input[type=date], 
+		input[type=datetime], 
+		input[type=datetime-local], 
+		input[type=month], 
+		input[type=week], 
+		input[type=email], 
+		input[type=number], 
+		input[type=search], 
+		input[type=tel], 
+		input[type=time], 
+		input[type=url], 
+		textarea {
+			@extend p;
+			padding: 1rem;
+			font-family: $font-body;
+			border-color: $color-tan;
+			border-radius: 0;
+			background-color: rgba($color-tan, .0998);
+			&::placeholder {
+				color: $black;
+			}
+		}
+		input[type=text], 
+		input[type=password], 
+		input[type=date], 
+		input[type=datetime], 
+		input[type=datetime-local], 
+		input[type=month], 
+		input[type=week], 
+		input[type=email], 
+		input[type=number], 
+		input[type=search], 
+		input[type=tel], 
+		input[type=time], 
+		input[type=url] {
+			height: 44px;
+		}
+		input[type=submit] {
+			@extend .button;	
 		}
 	}
 }

@@ -3,6 +3,28 @@
     "title": "WYSIWYG & Button",
     "fields": [
         {
+            "key": "field_666f78390668f",
+            "label": "Spacing Options",
+            "name": "clone-spacing_options",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_666f781ace543"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_666e3ce2baac0",
             "label": "",
             "name": "",
@@ -16,8 +38,8 @@
                 "class": "",
                 "id": ""
             },
-            "message": "<p>Use <code>Formats<\/code> for <b>Download Links, CTA Links, and Quote Citations.<\/p>\r\nThe shortcode <code>[social-media-links]<\/code> displays the Social Media menu.",
-            "new_lines": "wpautop",
+            "message": "Use <code>Formats<\/code> for <b>Download Links, CTA Links, and Quote Citations.<\/b>\r\nThe shortcode <code>[social-media-links]<\/code> displays the Social Media menu.",
+            "new_lines": "",
             "esc_html": 0
         },
         {
@@ -100,5 +122,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718500729
+    "modified": 1718581423
 }

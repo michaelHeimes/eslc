@@ -88,6 +88,28 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_666f78ce06008",
+                            "label": "Spacing Options",
+                            "name": "clone-spacing_options",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_666f781ace543"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
                             "key": "field_666a43193e84d",
                             "label": "Full Width Image",
                             "name": "clone-full_width_image",
@@ -412,5 +434,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718496544
+    "modified": 1718581480
 }
