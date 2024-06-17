@@ -2,6 +2,8 @@
 	&.has-bg-img {
 		background-size: cover;
 		background-attachment: fixed;
+		padding-top: clamp(6.5rem, 5.761rem + 3.695vw, 8.5rem);
+		padding-bottom: clamp(6.5rem, 5.761rem + 3.695vw, 8.5rem);
 		&:before {
 			content: '';
 			display: block;
@@ -26,7 +28,7 @@
 			}
 		}
 		.at-row>.Prefix {
-			min-width: 0;
+			min-width: 100px;
 		}
 		fieldset legend {
 			@extend .h3;

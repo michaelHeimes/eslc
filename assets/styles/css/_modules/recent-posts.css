@@ -1,0 +1,6 @@
+.recent-posts {
+  padding-top: clamp(1.625rem, 0.701rem + 4.619vw, 4.125rem);
+}
+.recent-posts h2 {
+  margin-bottom: clamp(1rem, 0.538rem + 2.309vw, 2.25rem);
+}

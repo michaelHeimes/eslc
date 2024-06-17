@@ -10,7 +10,7 @@ $hero_image = get_sub_field('hero_image') ?? null;
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x align-middle">
 				<?php if( !empty($hero_heading) || !empty($hero_large_text) ):?>
-					<div class="cell small-12 medium-6 tablet-5">
+					<div class="left cell small-12 medium-6 tablet-5">
 						<?php if( !empty($hero_heading) ):?>
 							<h1 class="color-tan">
 								<?=esc_html( $hero_heading );?>

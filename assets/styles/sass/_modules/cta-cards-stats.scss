@@ -31,6 +31,10 @@
 			}
 		}
 		.cta-card {
+			margin-bottom: $smallGutter;
+			@include breakpoint(medium) {
+				margin-bottom: $mediumGutter;
+			}
 			.inner {
 				box-shadow: 0px 10px 19px 0px rgba(0,0,0,0.2);
 				color: $black;
@@ -94,7 +98,12 @@
 		padding-bottom: 72px;
 		margin-top: -133px;
 		.grid-container {
-			padding-top: 80px;
+			padding-top: 1.875rem;
+			padding-top: clamp(1.875rem, 0.72rem + 5.774vw, 5rem);
+			@include breakpoint(medium) {
+				padding-top: 5rem;
+				padding-top: clamp(1.875rem, 0.72rem + 5.774vw, 5rem);
+			}
 		}
 		.cta-card {
 			.font-header {

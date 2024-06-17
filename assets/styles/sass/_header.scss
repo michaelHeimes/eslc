@@ -1,4 +1,5 @@
 header.site-header {
+	transition: transform 0.5s ease;
 	#searchform {
 		input {
 			margin: 0;
@@ -148,21 +149,23 @@ header.site-header {
 				    position: absolute;
 				    left: 0;
 				    right: 0;
-				    width: 36px;
-				    height: 4px;
-				    background-color: $white;
+					margin: auto;
+				    width: 18px;
+				    height: 2px;
+					border-radius: 2px;
+				    background-color: $color-tan;
 					transition: all .3s ease;
 				    
 				    &:nth-child(1) {
-					    top: 4px;
+					    top: 12px;
 				    }
 
 				    &:nth-child(2) {
-					    top: 16px;
+					    top: 17px;
 				    }
 				    
 				    &:nth-child(3) {
-					    bottom: 4px;
+					    bottom: 12px;
 				    }
 				    				    
 			    }
@@ -171,7 +174,7 @@ header.site-header {
 				span {
 					&:nth-child(1) {
 						top: 4px;
-						transform: translate(0px, 12px) rotate(-45deg);
+						transform: translate(0px, 13px) rotate(-45deg);
 					}
 			
 					&:nth-child(2) {
@@ -183,7 +186,7 @@ header.site-header {
 					
 					&:nth-child(3) {
 						bottom: 4px;
-						transform: translate(0px, -12px) rotate(45deg);
+						transform: translate(0px, -13px) rotate(45deg);
 					}
 				}				
 			}

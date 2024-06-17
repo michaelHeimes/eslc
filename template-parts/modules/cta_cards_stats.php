@@ -38,7 +38,7 @@ $cta_cards_stats_stats = get_sub_field('cta_cards_stats_stats') ?? null;
 								<?php if( empty($arrow_link ) ):?>
 									<div class="inner bg-white grid-x flex-dir-column h-100">
 								<?php else:?>
-									<a class="inner bg-white grid-x flex-dir-column h-100" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+									<a class="inner bg-white grid-x flex-dir-column h-100 has-scale-img" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 								<?php endif;?>
 									<div class="card-top">
 										<?php if( !empty( $image ) ) {

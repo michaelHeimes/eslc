@@ -13,9 +13,9 @@
 	<?php if( is_single() ):?>
 		<?php get_template_part( 'template-parts/modules' );?>
 	<?php else:?>
-		<a <?php if( !is_home() || !is_archive() ):?> class="color-white"<?php endif;?> href="<?= esc_url( get_permalink() );?>" rel="bookmark">
+		<a class="<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?> has-scale-img" href="<?= esc_url( get_permalink() );?>" rel="bookmark">
 			<div class="grid-x grid-padding-x">
-				<div class="cell small-12 medium-6">
+				<div class="cell small-12 medium-6 img-wrap">
 					<?php the_post_thumbnail('full'); ?>
 				</div>
 				<div class="entry-header cell small-12 medium-6">

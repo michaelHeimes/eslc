@@ -8,9 +8,9 @@
 
 <div class="top-bar-wrap grid-container fluid">
 
-	<div class="top-bar" id="top-bar-menu">
+	<div class="top-bar grid-x grid-padding-x" id="top-bar-menu">
 	
-		<div class="top-bar-left float-left">
+		<div class="cell auto">
 			
 			<div class="site-branding show-for-sr">
 				<?php
@@ -41,7 +41,7 @@
 			</ul>
 						
 		</div>
-		<div class="top-bar-right show-for-tablet">
+		<div class="cell shrink show-for-tablet">
 			<div class="grid-x align-right">
 				<div class="cell shrink">
 					<div class="top grid-x grid-padding-x align-middle align-right">
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="menu-toggle-wrap top-bar-right float-right hide-for-tablet">
+		<div class="cell shrink menu-toggle-wrap top-bar-right float-right hide-for-tablet">
 			<ul class="menu">
 				<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
 				<li><a id="menu-toggle" data-toggle="off-canvas"><span></span><span></span><span></span></a></li>

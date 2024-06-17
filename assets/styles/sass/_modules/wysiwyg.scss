@@ -5,6 +5,11 @@
 		padding: 5.625rem 0;
 		padding: clamp(1.938rem, 0.576rem + 6.812vw, 5.625rem) 0;
 	}
+	@include breakpoint(medium down) {
+		h2 {
+			text-align: left !important;
+		}
+	}
 	.download-link {
 		display: inline-flex;
 		align-items: center;

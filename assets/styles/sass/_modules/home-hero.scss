@@ -1,6 +1,20 @@
 .home-hero {
+	> .grid-container {
+		> .grid-x {
+			min-height: 600px;
+			min-height: clamp(32.5rem, 30.652rem + 9.238vw, 37.5rem);
+		}
+	}
+	.left {
+		padding-top: rem-calc(12);
+		padding-bottom: rem-calc(40);
+		@include breakpoint(tablet) {
+			padding-top: rem-calc(40);
+		}
+	}
 	h1 {
 		line-height: 1.2;
+		margin-bottom: 0.6em;
 		span.font-body {
 			text-transform: uppercase;
 			font-size: clamp(3rem, 2.446rem + 2.771vw, 4.5rem);
@@ -8,7 +22,29 @@
 			transform: translateY(-0.1em);
 		}
 	}
-	.img-wrap {
+	.btn-wrap {
+		a.button {
+			padding: 0.625em 1.421em;
+		}
+	}
+	.img-wrap.cell {
+		@include breakpoint(medium down) {
+			padding: 0;
+		}
+		> .relative {
+			@include breakpoint(medium) {
+				position: absolute;
+				width: 50vw;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
 		img.mask {
 			position: absolute;
 			top: 0;
