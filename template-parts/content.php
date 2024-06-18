@@ -6,7 +6,7 @@
  *
  * @package trailhead
  */
-
+$post_type = get_post_type();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -16,12 +16,16 @@
 		<a class="<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?> has-scale-img" href="<?= esc_url( get_permalink() );?>" rel="bookmark">
 			<div class="grid-x grid-padding-x">
 				<div class="cell small-12 medium-6 img-wrap">
-					<?php the_post_thumbnail('full'); ?>
+					<div class="inner overflow-hidden">
+						<?php the_post_thumbnail('full'); ?>
+					</div>
 				</div>
 				<div class="entry-header cell small-12 medium-6">
-					<div class="date weight-medium small-14<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?>">
-						<?php echo get_the_date('F j, Y'); ?>
-					</div>
+					<?php if( $post_type !== 'post' && !is_home() && !is_archive() || $post_type == 'post' && is_home() || $post_type == 'post' &&  is_archive() ):?>
+						<div class="date weight-medium small-14<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?>">
+							<?php echo get_the_date('F j, Y'); ?>
+						</div>
+					<?php endif;?>
 					<h2 class="entry-title h3<?php if( !is_home() || !is_archive() ):?> color-white<?php endif;?>">
 						<span><?php the_title();?></span>
 					</h2>

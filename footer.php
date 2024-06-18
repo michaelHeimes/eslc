@@ -11,7 +11,7 @@
 
 ?>
 
-				<footer id="colophon" class="site-footer">
+				<footer id="colophon" class="site-footer relative">
 					<div class="site-info">
 						<div class="grid-container">
 							<div class="grid-x grid-padding-x align-bottom">
@@ -41,7 +41,7 @@
 													$link_target = $link['target'] ? $link['target'] : '_self';
 													?>
 													<div class="donate-link-wrap">
-														<a class="button tan" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+														<a class="button btn-tan" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 													</div>
 												<?php endif; ?>
 												<?php if(wp_get_nav_menu_items(get_nav_menu_locations()['social-links'])): ?>

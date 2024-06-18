@@ -1,7 +1,7 @@
 .img-copy-cta {
 	.img-wrap {
 		padding-left: 0;
-		@include breakpoint(small down) {
+		@include breakpoint(mobile down) {
 			padding: 0;
 		}
 		img {

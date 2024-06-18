@@ -28,9 +28,6 @@
 		}
 	}
 	.img-wrap.cell {
-		@include breakpoint(medium down) {
-			padding: 0;
-		}
 		> .relative {
 			@include breakpoint(medium) {
 				position: absolute;

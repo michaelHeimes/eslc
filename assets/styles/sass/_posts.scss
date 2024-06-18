@@ -66,6 +66,17 @@ article.event-cpt {
 	&:last-of-type {
 		margin-bottom: 1.75rem;
 	}
+	h2 {
+		margin-bottom: rem-calc(14);
+	}
+	a:hover {
+		h2 {
+			text-decoration: underline;
+		}
+		svg {
+			transform: translateX(24px);
+		}
+	}
 	// a:not(.button) {
 	// 	color: $color-brown;
 	// 	.entry-header {
@@ -98,4 +109,22 @@ article.event-cpt {
 	// 		}
 	// 	}
 	// }
+
+}
+
+article.post {
+	.img-wrap .inner {
+		@include breakpoint(mobile down) {
+			margin-bottom: rem-calc(15.5);
+		}
+	}
+}
+
+article.event-cpt {
+	.date {
+		margin-bottom: .64rem;
+		@include breakpoint(mobile down) {
+			padding-top: 1rem;
+		}
+	}
 }

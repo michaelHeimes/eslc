@@ -45,7 +45,7 @@ footer#colophon {
 	
 	.donate-link-wrap {
 		padding-bottom: 2.98rem;
-		@include breakpoint(small down) {
+		@include breakpoint(tablet down) {
 			padding-top: 2.4rem;
 		}
 	}
@@ -94,5 +94,28 @@ footer#colophon {
 			}
 		}
 	}
-	
+	.img-wrap.cell {
+		> .relative {
+			@include breakpoint(medium) {
+				position: absolute;
+				width: 50vw;
+				top: 212px;
+				right: 0;
+				bottom: 0;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		img.mask {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }

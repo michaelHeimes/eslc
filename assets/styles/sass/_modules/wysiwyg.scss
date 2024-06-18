@@ -81,10 +81,11 @@
 		margin-top: 1.55em;
 	}
 	.button-group {
+		padding-top: rem-calc(6);
 		.btn-wrap {
-			margin-bottom: $smallGutter;
+			margin-bottom: calc($smallGutter * .5);
 			@include breakpoint(medium) {
-				margin-bottom: $mediumGutter;	
+				margin-bottom: calc($mediumGutter * .5);	
 			}
 		}
 	}
@@ -135,6 +136,9 @@
 		p a,
 		.cta-link a {
 			color: $white;
+		}
+		a.button {
+			@extend .btn-tan;	
 		}
 	}
 }

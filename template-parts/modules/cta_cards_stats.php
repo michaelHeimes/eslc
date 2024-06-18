@@ -80,28 +80,37 @@ $cta_cards_stats_stats = get_sub_field('cta_cards_stats_stats') ?? null;
 		<?php if( !empty($cta_cards_stats_stats_heading) || !empty($cta_cards_stats_stats) ):?>
 			<div class="bottom relative">
 				<img class="mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/impact-pattern@2x.png" alt="Background Pattern">
-				<div class="grid-container relative">
-					<div class="grid-x grid-padding-x">
-						<?php if( !empty($cta_cards_stats_stats_heading) ):?>
+				<div class="grid-container relative">					
+					<?php if( !empty($cta_cards_stats_stats_heading) ):?>
+						<div class="grid-x grid-padding-x">
 							<div class="cell small-12 text-center">
 								<h2><?=esc_html( $cta_cards_stats_stats_heading );?></h2>
 							</div>
-						<?php endif;?>
-						<?php if( !empty($cta_cards_stats_stats) ):
-							foreach($cta_cards_stats_stats as $cta_cards_stats_stat):	
-								$figure = $cta_cards_stats_stat['figure'] ?? null;
-								$label = $cta_cards_stats_stat['label'] ?? null;
-						?>
+						</div>
+					<?php endif;?>
+					<?php if( !empty($cta_cards_stats_stats) ):?>
+						<div class="grid-x grid-padding-x counters">
+
+						<?php foreach($cta_cards_stats_stats as $cta_cards_stats_stat):	
+							$starting_number = '';
+							$starting_number = $cta_cards_stats_stat['starting_number'] ?? null;
+							if( empty($starting_number) ) {
+								$starting_number = 0;
+							}
+							$ending_number = $cta_cards_stats_stat['ending_number'] ?? null;
+							$label = $cta_cards_stats_stat['label'] ?? null;
+					?>
 							<div class="cta-card cell small-12 tablet-6 large-4 text-center align-center">
-								<?php if( !empty($figure) ):?>
-									<div class="font-header color-red"><?=esc_html( $figure );?></div>
+								<?php if( !empty($ending_number) ):?>
+									<div class="font-header color-red js-countup-target" data-numberfrom="<?=esc_attr( $starting_number );?>"  data-numberto="<?=esc_attr( $ending_number );?>"></div>
 								<?php endif;?>
 								<?php if( !empty($label) ):?>
 									<div class="weight-semibold uppercase"><?=esc_html( $label );?></div>
 								<?php endif;?>
 							</div>
-						<?php endforeach; endif;?>
-					</div>
+					<?php endforeach; ?>
+						</div>
+					<?php endif;?>
 				</div>
 			</div>
 		<?php endif;?>
