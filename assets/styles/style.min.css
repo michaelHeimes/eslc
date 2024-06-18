@@ -10089,6 +10089,11 @@ footer#colophon .a-logos .img-wrap {
     margin-bottom: 34px;
   }
 }
+@media print, screen and (max-width: 56.24875em) {
+  footer#colophon .img-wrap.cell {
+    padding: 0;
+  }
+}
 @media print, screen and (min-width: 40em) {
   footer#colophon .img-wrap.cell > .relative {
     position: absolute;
