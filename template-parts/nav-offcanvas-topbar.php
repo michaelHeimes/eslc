@@ -41,7 +41,7 @@
 			</ul>
 						
 		</div>
-		<div class="cell shrink show-for-tablet">
+		<div class="cell shrink show-for-large">
 			<div class="grid-x align-right">
 				<div class="cell shrink">
 					<div class="top grid-x grid-padding-x align-middle align-right">
@@ -85,10 +85,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell shrink menu-toggle-wrap top-bar-right float-right hide-for-tablet">
+		<div class="cell shrink menu-toggle-wrap top-bar-right float-right hide-for-large">
 			<ul class="menu">
 				<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-				<li><a id="menu-toggle" data-toggle="off-canvas"><span></span><span></span><span></span></a></li>
+				<li><a id="menu-toggle" data-toggle="off-canvas" aria-expanded="false" aria-controls="off-canvas"><span></span><span></span><span></span></a></li>
 			</ul>
 		</div>
 	</div>
