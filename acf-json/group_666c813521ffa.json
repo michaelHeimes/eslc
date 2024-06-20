@@ -3,6 +3,28 @@
     "title": "People Cards",
     "fields": [
         {
+            "key": "field_667443cbd0047",
+            "label": "Spacing Options",
+            "name": "clone-spacing_options",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_666f781ace543"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_666c813531b92",
             "label": "Intro Heading \/ Copy",
             "name": "people_cards_intro_heading_copy",
@@ -154,5 +176,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718498656
+    "modified": 1718895615
 }

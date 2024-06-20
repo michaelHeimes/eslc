@@ -182,9 +182,10 @@
     
     _app.mobile_takover_nav = function() {
         const menuToggle = $('a#menu-toggle');
+        console.log(menuToggle);
         const offCanvas = $('#off-canvas');
-        $(document).on('click',  menuToggle, function(){
-            
+        menuToggle.on('click', function() {
+            console.log($(this));
             if ( $(menuToggle).hasClass('clicked') ) {
                 $(menuToggle).removeClass('clicked');
                 $(offCanvas).fadeOut(200);

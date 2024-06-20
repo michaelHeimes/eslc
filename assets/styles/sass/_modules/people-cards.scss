@@ -1,8 +1,33 @@
 .people_cards {
-	h2 {
-		color: $color-dark-green;
+	.intro {
+		h2 {
+			color: $color-dark-green;
+			margin-bottom: 2.188rem;
+			margin-bottom: clamp(2.188rem, 0.268rem + 5.119vw, 4.875rem);
+			@include breakpoint(medium) {
+				margin-bottom: 4.875rem;
+				margin-bottom: clamp(2.188rem, 0.268rem + 5.119vw, 4.875rem);
+			}
+		}
+		h3 {
+			color: $color-green;
+			line-height: 1.3;
+			font-size: clamp(1.375rem, 0.75rem + 1.667vw, 2.25rem);
+			margin-bottom: 1.438rem;
+			margin-bottom: clamp(1.438rem, 1.036rem + 1.071vw, 2rem);
+			@include breakpoint(medium) {
+				margin-bottom: 2rem;
+				margin-bottom: clamp(1.438rem, 1.036rem + 1.071vw, 2rem);
+			}
+		}
 	}
-	h3 {
-		color: $color-green;
+	.cards-wrap {
+		> .cell {
+			margin-bottom: rem-calc(40);
+			.img-wrap {
+				margin-bottom: 1rem;
+				margin-bottom: clamp(0.938rem, 0.893rem + 0.119vw, 1rem);
+			}
+		}
 	}
 }

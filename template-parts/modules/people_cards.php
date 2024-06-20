@@ -1,17 +1,19 @@
 <?php
+$remove_top_padding = get_sub_field('remove_top_padding') ?? null; 
+$remove_bottom_padding = get_sub_field('remove_bottom_padding') ?? null; 
 $intro_heading_copy = get_sub_field('people_cards_intro_heading_copy') ?? null;
 $cards = get_sub_field('people_cards_cards') ?? null;
 ?>
-<section class="people_cards module">
+<section class="people_cards module<?php if($remove_top_padding == true) { echo ' no-top-padding';} if ($remove_bottom_padding == true) { echo ' no-bottom-padding';}?>">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
 			<div class="cell small-12 tablet-10 tablet-offset-1 xlarge-8">
 				<div class="grid-x grid-padding-x">
-					<div class="cell small-12 medium-10 tablet-offset-1">
+					<div class="intro cell small-12 medium-10 tablet-offset-1">
 						<?=wp_kses_post( $intro_heading_copy );?>
 					</div>
 				</div>
-				<div class="grid-x grid-padding-x">
+				<div class="cards-wrap grid-x grid-padding-x">
 					<?php foreach($cards as $card):
 						$photo = $card['photo'] ?? null;
 						$name = $card['name'] ?? null;
