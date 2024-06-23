@@ -3,6 +3,28 @@
     "title": "Image & Copy CTA",
     "fields": [
         {
+            "key": "field_667863b22d040",
+            "label": "Spacing Options",
+            "name": "clone-spacing_options",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_666f781ace543"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_665e302fbedd3",
             "label": "Background Color",
             "name": "img_copy_cta_background_color",
@@ -127,5 +149,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717451966
+    "modified": 1719165906
 }

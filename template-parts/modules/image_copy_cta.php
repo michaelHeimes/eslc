@@ -1,4 +1,6 @@
 <?php
+$remove_top_padding = get_sub_field('remove_top_padding') ?? null; 
+$remove_bottom_padding = get_sub_field('remove_bottom_padding') ?? null; 
 $img_copy_cta_background_color = get_sub_field('img_copy_cta_background_color') ?? null;
 $img_copy_cta_image = get_sub_field('img_copy_cta_image') ?? null;
 $img_copy_cta_heading = get_sub_field('img_copy_cta_heading') ?? null;
@@ -7,7 +9,7 @@ $img_copy_cta_button_link = get_sub_field('img_copy_cta_button_link') ?? null;
 ?>
 
 <?php if( !empty($img_copy_cta_background_color) || !empty($img_copy_cta_image) || !empty($img_copy_cta_heading) || !empty($img_copy_cta_text) || !empty($img_copy_cta_button_link) ):?>
-	<section class="img-copy-cta module">
+	<section class="img-copy-cta module<?php if($remove_top_padding == true) { echo ' no-top-padding';} if ($remove_bottom_padding == true) { echo ' no-bottom-padding';}?>">
 		<div class="grid-container">
 			<div class="bg-<?=esc_attr( $img_copy_cta_background_color );?>">
 				<div class="grid-x grid-padding-x">
