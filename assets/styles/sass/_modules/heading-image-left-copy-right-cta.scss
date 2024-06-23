@@ -1,0 +1,27 @@
+.heading-image-left-copy-right-cta {
+	h2 {
+		margin-bottom: 0.57em;
+	}
+	.img-wrap {
+		@include breakpoint(mobile) {
+			margin-bottom: rem-calc(22);
+		}
+	}
+	.link-wrap {
+		a {
+			font-weight: 600;
+			span {
+				display: inline-block;
+				margin-right: 0.4em;
+			}
+			svg {
+				transition: 0.3s ease;
+			}
+			&:hover {
+				svg {
+					transform: translateX(8px);
+				}
+			}
+		}
+	}
+}

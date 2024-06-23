@@ -16,9 +16,6 @@
 		img {
 			box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
 		}
-		svg {
-			transition: transform .25s ease;
-		}
 	}
 	.left {
 		@include breakpoint(medium down) {

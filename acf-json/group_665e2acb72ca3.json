@@ -49,6 +49,41 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_667743bbe2f1f": {
+                    "key": "layout_667743bbe2f1f",
+                    "name": "banner_image",
+                    "label": "Banner Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_667743c3e2f22",
+                            "label": "Banner Image",
+                            "name": "banner_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_665e5caab4201": {
                     "key": "layout_665e5caab4201",
                     "name": "cta_cards_stats",
@@ -71,6 +106,38 @@
                             },
                             "clone": [
                                 "group_665e32fd585fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_665e34f53176a": {
+                    "key": "layout_665e34f53176a",
+                    "name": "form_embed",
+                    "label": "Form Embed",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_667739ebb723e",
+                            "label": "Form Embed",
+                            "name": "clone-form_embed",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_665e344adfc24"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -125,6 +192,38 @@
                             },
                             "clone": [
                                 "group_666a42939bd8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6677544653132": {
+                    "key": "layout_6677544653132",
+                    "name": "heading_image_left_copy_right_cta",
+                    "label": "Heading, Image Left, Copy Right CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6677544d53136",
+                            "label": "Heading, Image Left, Copy Right CTA",
+                            "name": "clone-heading_image_left_copy_right_cta",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_667753af35b90"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -221,38 +320,6 @@
                             },
                             "clone": [
                                 "group_666a4dcb1ff74"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_665e34f53176a": {
-                    "key": "layout_665e34f53176a",
-                    "name": "newsletter_signup",
-                    "label": "Newsletter Signup",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_665e34fc3176d",
-                            "label": "Newsletter Signup",
-                            "name": "clone-newsletter_signup",
-                            "aria-label": "",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_665e344adfc24"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -434,5 +501,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718581480
+    "modified": 1719096440
 }

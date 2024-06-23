@@ -1,18 +1,60 @@
 {
-    "key": "group_665e344adfc24",
-    "title": "Form Embed",
+    "key": "group_667753af35b90",
+    "title": "Heading, Image Left, Copy Right CTA",
     "fields": [
         {
-            "key": "field_665e344ae1d72",
-            "label": "Background Image",
-            "name": "form_embed_background_image",
+            "key": "field_66775cdbd83ab",
+            "label": "Spacing Options",
+            "name": "clone-spacing_options",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_666f781ace543"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_667753afbae09",
+            "label": "Heading",
+            "name": "heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_667753c6bae0a",
+            "label": "Image",
+            "name": "image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -25,14 +67,14 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "preview_size": "medium"
+            "preview_size": "thumbnail"
         },
         {
-            "key": "field_665e344ae1d75",
-            "label": "Heading",
-            "name": "form_embed_heading",
+            "key": "field_667753e2bae0b",
+            "label": "Text",
+            "name": "text",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -43,36 +85,16 @@
             },
             "default_value": "",
             "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_665e63883ad51",
-            "label": "Form Code",
-            "name": "form_embed_form_code",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "Remove all code that calls form css.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
+            "rows": 4,
             "placeholder": "",
             "new_lines": ""
         },
         {
-            "key": "field_66773b8796f94",
-            "label": "Add Drop Shadow to Form",
-            "name": "form_embed_add_drop_shadow_to_form",
+            "key": "field_667753f1bae0c",
+            "label": "Link",
+            "name": "link",
             "aria-label": "",
-            "type": "true_false",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -81,11 +103,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
+            "return_format": "array"
         }
     ],
     "location": [
@@ -103,8 +121,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719091638
+    "modified": 1719098610
 }

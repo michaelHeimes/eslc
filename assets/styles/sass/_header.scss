@@ -114,6 +114,7 @@ header.site-header {
 		box-shadow: 0 0 0;
 		&[type='text'] {
 			background-color: rgba($black, .1473);
+			color: $white;
 			&::placeholder {
 				color: $white;
 				opacity: 1;

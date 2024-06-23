@@ -1,4 +1,4 @@
-.newsletter_signup {
+.form_embed {
 	&.has-bg-img {
 		background-size: cover;
 		background-attachment: fixed;
@@ -15,17 +15,35 @@
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
 		}
 	}
-	.inner {
-		padding: 2.55rem 4.4rem 1.35rem;
-		padding: 2.55rem clamp(0rem, -1.626rem + 8.129vw, 4.4rem) 1.35rem;
+	&.drop-shadow .inner {
+		box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 	}
+	&.has-bg-img,
+	&.drop-shadow {
+		.inner {
+			padding: 2.55rem 4.4rem 1.35rem;
+			padding: 2.55rem clamp(0rem, -1.626rem + 8.129vw, 4.4rem) 1.35rem;
+		}	
+	}	
 	.ngp-form.at {
-		.at-row>[class^=at-] {
-			margin: 0 1rem;
-			flex: 1 1 100%;
-			@include breakpoint(medium) {
-				flex: 1;
+		.at-row {
+			align-items: center;
+			>[class^=at-] {
+				margin: 0 1rem;
+				flex: 1 1 100%;
+				@include breakpoint(medium) {
+					flex: 1;
+				}
 			}
+		}
+		.at-fields {
+			position: relative;
+			margin-left: -1rem;
+			margin-right: -1rem;
+		}
+		.at-fieldset {
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.at-row>.Prefix {
 			min-width: 100px;

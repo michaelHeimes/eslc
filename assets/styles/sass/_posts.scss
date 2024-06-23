@@ -1,15 +1,11 @@
 .blog,
-.archive {
-	main {
-		padding-bottom: 3.28rem;
+.archive,
+.search {
+	.module {
+		padding-top: rem-calc(53);
 	}
 	h1 {
 		margin-bottom: 1.64em;
-	}
-	main {
-		> .grid-container {
-			padding-top: rem-calc(53);
-		}
 	}
 	.cat-links {
 		padding-bottom: .42rem;
@@ -18,8 +14,11 @@
 			@include breakpoint(medium) {
 				margin-bottom: calc($mediumGutter * .5);
 			}
-			a.active {
+			a {
 				text-decoration: underline;
+				&.active {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -110,6 +109,25 @@ article.event-cpt {
 	// 	}
 	// }
 
+}
+
+article.post,
+article.event-cpt {
+	svg {
+		transition: transform .25s ease;
+		&:not(.recent-arrow) {
+			path {
+				transition: all .25s ease;
+			}
+		}
+	}
+	a.archive-permalink {
+		&:hover {
+			svg path {
+				fill: $color-red;
+			}
+		}
+	}
 }
 
 article.post {

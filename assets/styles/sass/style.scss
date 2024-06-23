@@ -89,7 +89,7 @@ $mediumGutter: map-get($grid-margin-gutters, "medium");
 // @import "_parts/banner";
 
 @import "_modules/home-hero";
-@import "_modules/newsletter";
+@import "_modules/form-embed";
 @import "_modules/wysiwyg";
 @import "_modules/accordion";
 @import "_modules/image-slider";
@@ -97,5 +97,6 @@ $mediumGutter: map-get($grid-margin-gutters, "medium");
 @import "_modules/img-copy-cta";
 @import "_modules/cta-cards-stats";
 @import "_modules/recent-posts";
+@import "_modules/heading-image-left-copy-right-cta";
 
 @import "_pages/home";

@@ -13,9 +13,13 @@ $queried_object = get_queried_object();
 ?>
 
 	<main id="primary" class="site-main">
-		<?php echo get_the_post_thumbnail( $posts_page_id, 'full' );?>
+		<?php if( has_post_thumbnail( $posts_page_id) ):?>
+			<div class="banner-img text-center">
+				<?php echo get_the_post_thumbnail( $posts_page_id, 'full' );?>
+			</div>
+		<?php endif;?>
 		<div class="grid-container">
-			<div class="grid-x grid-padding-x align-center">
+			<div class="grid-x grid-padding-x align-center module">
 				<div class="cell small-12 tablet-10 large-8">
 			
 						<header class="page-header">

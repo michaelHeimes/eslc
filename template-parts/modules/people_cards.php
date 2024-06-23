@@ -9,7 +9,7 @@ $cards = get_sub_field('people_cards_cards') ?? null;
 		<div class="grid-x grid-padding-x">
 			<div class="cell small-12 tablet-10 tablet-offset-1 xlarge-8">
 				<div class="grid-x grid-padding-x">
-					<div class="intro cell small-12 medium-10 tablet-offset-1">
+					<div class="intro cell small-12 medium-offset-1">
 						<?=wp_kses_post( $intro_heading_copy );?>
 					</div>
 				</div>
@@ -26,7 +26,7 @@ $cards = get_sub_field('people_cards_cards') ?? null;
 								$img_alt = trim( strip_tags( get_post_meta( $imgID, '_wp_attachment_image_alt', true ) ) );
 								$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );
 								echo '<div class="grid-x grid-padding-x">';
-								echo '<div class="img-wrap cell small-12 medium-8 tablet-7">';
+								echo '<div class="img-wrap cell small-12 medium-9 tablet-7">';
 								echo $img;
 								echo '</div>';
 								echo '</div>';
