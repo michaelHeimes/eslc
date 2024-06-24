@@ -38,7 +38,7 @@ $img_copy_cta_button_link = get_sub_field('img_copy_cta_button_link') ?? null;
 									$link_target = $link['target'] ? $link['target'] : '_self';
 									?>
 									<div class="btn-wrap">
-										<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+										<a class="button large" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 									</div>
 								<?php endif; ?>
 							</div>

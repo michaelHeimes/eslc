@@ -212,6 +212,14 @@
         
     }
     
+    _app.next_link = function() {
+        const firstLink = document.getElementById('first-link');
+        const firstSection = document.querySelector('article > section');
+        if(firstLink && firstSection) {
+            firstSection.id = 'first';
+        }
+    }
+    
     _app.image_slider = function() {
         if( document.querySelector( '.image-slider-swiper' ) ) {
             
@@ -289,6 +297,7 @@
         // _app.display_on_load();
         
         // Custom Functions
+        _app.next_link();
         _app.parentLinkClones();
         _app.image_slider();
         _app.count_up();

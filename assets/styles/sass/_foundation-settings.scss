@@ -124,7 +124,7 @@ $breakpoints-hidpi: (
   "hidpi-3": 3
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small mobile medium tablet large);
+$breakpoint-classes: (small mobile medium tablet large xlarge);
 
 // 3. The Grid
 // -----------
@@ -297,8 +297,8 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-font-weight: 600;
-$button-padding: 0.625em 1.276em;
+$button-font-weight: 500;
+$button-padding: 0.4378em .709em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
