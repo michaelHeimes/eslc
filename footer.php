@@ -21,7 +21,7 @@
 											$imgID =  get_field('footer_logo', 'option')['ID'];
 											$img_alt = trim( strip_tags( get_post_meta( $imgID, '_wp_attachment_image_alt', true ) ) );
 											$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );
-											echo '<div class="logo-wrap cell small-12 medium-4">';
+											echo '<div class="logo-wrap cell small-12 large-4">';
 											echo $img;
 											echo '</div>';
 										}?>

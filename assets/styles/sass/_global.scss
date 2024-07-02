@@ -76,7 +76,7 @@ button,
 	li {			
 		display: flex;
 		a {
-			display: flex;
+			display: inline-flex !important;
 			justify-content: center;
 			align-items: center;
 		}

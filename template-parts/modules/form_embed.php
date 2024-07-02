@@ -15,7 +15,7 @@ $form_embed_add_drop_shadow_to_form = get_sub_field('form_embed_add_drop_shadow_
 	<section class="form_embed module relative<?php if($has_bg_img == true) { echo ' has-bg-img relative';}; if( $form_embed_add_drop_shadow_to_form ) { echo ' drop-shadow'; };?>" style="background-image: url(<?=esc_url( $form_embed_background_image_url );?>)">
 		<div class="grid-container relative">
 			<div class="grid-x grid-padding-x align-center">
-				<div class="cell small-11 medium-10 tablet-8">
+				<div class="cell small-12 medium-11 tablet-10 large-8">
 					<div class="inner bg-white">
 						<?php if( !empty($form_embed_heading) ):?>
 							<h2 class="text-center color-green"><?=esc_html( $form_embed_heading );?></h2>

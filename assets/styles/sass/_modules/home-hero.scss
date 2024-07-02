@@ -2,8 +2,10 @@
 	overflow: hidden;
 	> .grid-container {
 		> .grid-x {
-			min-height: 600px;
-			min-height: clamp(32.5rem, 30.652rem + 9.238vw, 37.5rem);
+			@include breakpoint(large) {
+				min-height: 600px;
+				min-height: clamp(32.5rem, 30.652rem + 9.238vw, 37.5rem);
+			}
 		}
 	}
 	.left {
@@ -12,6 +14,14 @@
 		}
 		@include breakpoint(tablet) {
 			padding-top: rem-calc(40);
+			padding-bottom: rem-calc(40);
+		}
+		@media (min-width: 1440px) {
+			position: relative;
+			left: -1.2rem;
+		}
+		@media (min-width: 1600px) {
+			left: -4vw;
 		}
 	}
 	h1 {
@@ -38,27 +48,28 @@
 		}
 		> .relative {
 			@include flush-right();
+			width: 100%;
+			@include breakpoint(tablet) {
+				width: calc(50vw + 15%);
+			}
+			@media (min-width: $global-width) {
+				width: calc(50vw + 13.33333%);
+			}
+			@include breakpoint(xlarge) {
+				width: calc(50vw + 15% + 8.3333333333%);
+			}
 			@include breakpoint(xlarge) {
 				padding-left: 8.3333333333%;
 			}
-			// @include breakpoint(tablet) {
-			// 	position: absolute;
-			// 	width: 60vw;
-			// 	top: 0;
-			// 	right: 0;
-			// 	bottom: 0;
-			// 	max-width: 860px;
-			// }
 			img {
+				position: absolute;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
 		}
 		img.mask {
-			position: absolute;
-			top: 0;
-			left: 0;
+			position: relative;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;

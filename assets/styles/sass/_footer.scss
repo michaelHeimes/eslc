@@ -18,11 +18,35 @@ footer#colophon {
 		}
 	}
 	
-	.right {
+	.right.cell {
+		@include breakpoint(medium down) {
+			padding: 0;
+		}
+		@include breakpoint(tablet) {
+			padding-right: 0;
+		}
+		> .relative {
+			@include flush-right();
+			width: 100%;
+			@include breakpoint(tablet) {
+				width: calc(50vw - calc($mediumGutter * .5));
+			}
+			img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			@media (min-width: 1240px) {
+				margin-right: 0;
+				width: 603px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
 		img.mask {
-			position: absolute;
-			top: 0;
-			left: 0;
+			position: relative;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -39,6 +63,9 @@ footer#colophon {
 				line-height: 1;
 				font-weight: 500;
 				padding: 0;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -63,7 +90,7 @@ footer#colophon {
 				letter-spacing: .07em;
 				padding: 0;				
 			&:hover {
-			
+				text-decoration: underline;
 			}
 				
 			}	
@@ -94,31 +121,7 @@ footer#colophon {
 			}
 		}
 	}
-	.img-wrap.cell {
-		@include breakpoint(medium down) {
-			padding: 0;
-		}
-		> .relative {
-			@include breakpoint(medium) {
-				position: absolute;
-				width: 50vw;
-				top: 212px;
-				right: 0;
-				bottom: 0;
-			}
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-		}
-		img.mask {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
+	a u:hover {
+		text-decoration: none;
 	}
 }

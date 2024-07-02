@@ -100,7 +100,7 @@ $cta_cards_stats_stats = get_sub_field('cta_cards_stats_stats') ?? null;
 							$ending_number = $cta_cards_stats_stat['ending_number'] ?? null;
 							$label = $cta_cards_stats_stat['label'] ?? null;
 					?>
-							<div class="cta-card cell small-12 tablet-6 large-4 text-center align-center">
+							<div class="cta-card cell small-12 large-4 text-center align-center">
 								<?php if( !empty($ending_number) ):?>
 									<div class="font-header color-red js-countup-target" data-numberfrom="<?=esc_attr( $starting_number );?>"  data-numberto="<?=esc_attr( $ending_number );?>"></div>
 								<?php endif;?>

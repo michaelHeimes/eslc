@@ -104,6 +104,9 @@ header.site-header {
 	width: 100%;
 	min-height: calc(100vh - 64px);
 	padding-bottom: 64px;
+	@include breakpoint(tablet) {
+		top: 97px;
+	}
 }
 
 	#searchform {
@@ -129,11 +132,20 @@ header,
 		display: flex;
 		width: rem-calc(28);
 		height: rem-calc(28);
+		cursor: pointer;
 		background: $color-brown url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.695 9.89c1.13 1.131 2.512 1.697 4.144 1.697.68 0 1.321-.11 1.924-.328a4.987 4.987 0 0 0 1.584-.917l5.454 5.454a.65.65 0 0 0 .492.204c.2 0 .368-.068.503-.204a.683.683 0 0 0 .204-.503.65.65 0 0 0-.204-.492L10.32 9.369a5.636 5.636 0 0 0 1.267-3.572c0-1.602-.562-2.968-1.686-4.1C8.777.566 7.411 0 5.805 0 4.198 0 2.829.566 1.697 1.697.566 2.83 0 4.194 0 5.793c0 1.6.565 2.965 1.695 4.097Zm7.247-.962c-.858.867-1.9 1.301-3.126 1.301-1.238 0-2.29-.434-3.158-1.301-.867-.868-1.3-1.912-1.3-3.135 0-1.222.433-2.266 1.3-3.134.867-.867 1.92-1.301 3.158-1.301 1.226 0 2.268.434 3.126 1.301.858.868 1.287 1.912 1.287 3.134 0 1.223-.429 2.267-1.287 3.135Z' fill='%23fff'/%3E%3C/svg%3E");
 		background-size: 1rem;
 		background-position: center;
 		background-repeat: no-repeat;
+		transition: background .25s ease;
+		&:hover {
+			background: $white url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.695 9.89c1.13 1.131 2.512 1.697 4.144 1.697.68 0 1.321-.11 1.924-.328a4.987 4.987 0 0 0 1.584-.917l5.454 5.454a.65.65 0 0 0 .492.204c.2 0 .368-.068.503-.204a.683.683 0 0 0 .204-.503.65.65 0 0 0-.204-.492L10.32 9.369a5.636 5.636 0 0 0 1.267-3.572c0-1.602-.562-2.968-1.686-4.1C8.777.566 7.411 0 5.805 0 4.198 0 2.829.566 1.697 1.697.566 2.83 0 4.194 0 5.793c0 1.6.565 2.965 1.695 4.097Zm7.247-.962c-.858.867-1.9 1.301-3.126 1.301-1.238 0-2.29-.434-3.158-1.301-.867-.868-1.3-1.912-1.3-3.135 0-1.222.433-2.266 1.3-3.134.867-.867 1.92-1.301 3.158-1.301 1.226 0 2.268.434 3.126 1.301.858.868 1.287 1.912 1.287 3.134 0 1.223-.429 2.267-1.287 3.135Z' fill='%238B7751'/%3E%3C/svg%3E");
+			background-size: 1rem;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 		input {
+			cursor: pointer;
 			font-size: 0;
 			width: 100%;
 			margin: 0;
@@ -325,7 +337,7 @@ header,
 				}
 			}
 			> a {
-				padding-left: .3rem;
+				padding-left: 0;
 			}
 			> ul.submenu {
 				padding: 3px 0 4px;
@@ -349,6 +361,8 @@ header,
 		padding: rem-calc(13) calc($smallGutter * .5);
 		.utility-nav {
 			padding-top: rem-calc(21);
+			margin-left: -0.5rem;
+			margin-right: -0.5rem;
 			li {
 				margin: 0 1.15rem calc($smallGutter * .5) 0;
 				&:last-child {

@@ -30,9 +30,21 @@
 			padding-top: clamp(0.188rem, -0.348rem + 1.429vw, 0.938rem);
 		}
 		a {
+			display: inline-flex;
 			font-weight: 600;
+			transition: color .25s ease, padding-left .3s ease;
 			span {
 				margin-right: rem-calc(12);
+			}
+			svg {
+				transition: transform .3s ease;
+			}
+			&:hover {
+				color: $white;
+				padding-right: 16px;
+				svg {
+					transform: translateX(16px);
+				}
 			}
 		}
 	}

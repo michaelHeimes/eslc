@@ -92,6 +92,9 @@
 	p a {
 		color: $color-blue;
 		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	h2 {
 		margin-bottom: .325em;

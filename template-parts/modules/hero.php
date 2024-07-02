@@ -10,7 +10,7 @@ $hero_image = get_sub_field('hero_image') ?? null;
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x">
 				<?php if( !empty($hero_heading) || !empty($hero_large_text) ):?>
-					<div class="left cell small-12 tablet-5 large-4 grid-x align-middle">
+					<div class="left cell small-12 tablet-5 tablet-offset-1 large-4 xlarge-offset-0 grid-x align-middle">
 						<div>
 							<?php if( !empty($hero_heading) ):?>
 								<h1 class="color-tan">
@@ -38,7 +38,7 @@ $hero_image = get_sub_field('hero_image') ?? null;
 					$imgID = $hero_image['ID'];
 					$img_alt = trim( strip_tags( get_post_meta( $imgID, '_wp_attachment_image_alt', true ) ) );
 					$img = wp_get_attachment_image( $imgID, 'full', false, [ "class" => "", "alt"=>$img_alt] );?>
-					<div class="img-wrap cell small-12 tablet-7 large-8 grid-x align-bottom">
+					<div class="img-wrap cell small-12 tablet-6 large-7 xlarge-8 grid-x align-bottom">
 						<div class="relative">
 							<?=$img;?>
 							<img class="mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-mask.svg" alt="ES Graphic Overlay">

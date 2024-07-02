@@ -16,6 +16,9 @@
 			}
 			a {
 				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
 				&.active {
 					text-decoration: none;
 				}
@@ -29,6 +32,9 @@
 			margin: .5rem;
 			a {
 				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 			span,
 			a {
@@ -47,6 +53,16 @@
 				&.next {
 					display: inline-flex;
 					align-items: center;
+				}
+				svg {
+					path {
+						transition: .25s ease;
+					}
+				}
+				&:hover {
+					svg path {
+						fill: $color-red;
+					}
 				}
 			}	
 			span.prev,
