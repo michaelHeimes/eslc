@@ -1,8 +1,12 @@
 <?php	
+
 	$event_args = array(  
 		'post_type' => 'event-cpt',
 		'post_status' => 'publish',
 		'posts_per_page' => 2,
+		'meta_key' => 'event_date',
+		'orderby' => 'meta_value',
+		'order' => 'ASC'
 	);
 	
 	$event_loop = new WP_Query( $event_args ); 
@@ -33,7 +37,7 @@
 				<div class="left cell small-12 tablet-6">
 					<h2 class="color-white">Upcoming Events</h2>
 					<?php while ( $event_loop->have_posts() ) : $event_loop->the_post();
-						get_template_part( 'template-parts/content', get_post_type() );
+						get_template_part( 'template-parts/content');
 					endwhile;?>
 					<?php if ( $event_archive_url ) :?>
 						<div class="all-link-wrap arrow-link">
@@ -49,7 +53,7 @@
 				<div class="right cell small-12 tablet-6">
 					<h2 class="color-white">Recent News</h2>
 					<?php while ( $post_loop->have_posts() ) : $post_loop->the_post();
-						get_template_part( 'template-parts/content', get_post_type() );
+						get_template_part( 'template-parts/content');
 					endwhile;?>
 					<?php if ( $post_archive_url ) :?>
 						<div class="all-link-wrap arrow-link">

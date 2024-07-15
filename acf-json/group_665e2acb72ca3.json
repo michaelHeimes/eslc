@@ -488,6 +488,20 @@
                 "operator": "==",
                 "value": "event-cpt"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "board-member-cpt"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "staff-member-cpt"
+            }
         ]
     ],
     "menu_order": 0,
@@ -501,5 +515,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719096440
+    "modified": 1721054977
 }

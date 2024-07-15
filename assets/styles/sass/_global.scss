@@ -120,6 +120,16 @@ POSTS & CONTENT STYLES
 	time {}
 }
 
+.single {
+	.person-header {
+		.img-wrap {
+			@include breakpoint(medium down) {
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+}
+
 // Entry content  
 .entry-content {
 	
