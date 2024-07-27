@@ -20,7 +20,7 @@ $post_type = get_post_type();
 			<div class="entry-header cell small-12 medium-6">
 				<?php if( $post_type !== 'post' && !is_home() && !is_archive() && !is_search() || $post_type == 'post' && is_home() || $post_type == 'post' &&  is_archive() ):?>
 					<div class="date weight-medium small-14<?php if( !is_home() && !is_archive() ):?> color-white<?php else:?> color-dark-brown<?php endif;?>">
-						<?php if( $post_type = 'event-cpt' ) {
+						<?php if( $post_type == 'event-cpt' ) {
 							$event_date_string = get_field('event_date') ?? null;
 							$event_date = DateTime::createFromFormat( 'Ymd', $event_date_string );
 							echo $event_date->format( 'F j, Y' );

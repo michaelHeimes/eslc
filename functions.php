@@ -281,3 +281,6 @@ require_once(get_template_directory().'/inc/image-sizes.php');
 
 // Shortcodes
 require_once(get_template_directory().'/inc/shortcodes.php');
+
+//Event CPT order by date field
+require_once(get_template_directory().'/inc/event-cpt-order.php');

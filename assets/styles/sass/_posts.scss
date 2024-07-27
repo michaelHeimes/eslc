@@ -75,90 +75,62 @@
 	}
 }
 
-article.post,
-article.event-cpt {
-	margin-bottom: rem-calc(40);	
-	&:last-of-type {
-		margin-bottom: 1.75rem;
-	}
-	h2 {
-		margin-bottom: rem-calc(14);
-	}
-	a:hover {
+.recent-posts,
+.blog,
+.post-type-archive {
+	article.post,
+	article.event-cpt {
+		margin-bottom: rem-calc(40);	
+		&:last-of-type {
+			margin-bottom: 1.75rem;
+		}
 		h2 {
-			text-decoration: underline;
+			margin-bottom: rem-calc(14);
 		}
+		a:hover {
+			h2 {
+				text-decoration: underline;
+			}
+			svg {
+				transform: translateX(24px);
+			}
+		}
+	}
+	
+	article.post,
+	article.event-cpt {
 		svg {
-			transform: translateX(24px);
+			transition: transform .25s ease;
+			&:not(.recent-arrow) {
+				path {
+					transition: all .25s ease;
+				}
+			}
 		}
-	}
-	// a:not(.button) {
-	// 	color: $color-brown;
-	// 	.entry-header {
-	// 		padding-top: 1rem;
-	// 	}
-	// 	.date {
-	// 		padding-bottom: 0.6rem;
-	// 		&:not(.color-white) {
-	// 			color: $color-dark-brown;
-	// 		}
-	// 	}
-	// 	.h3 {
-	// 		margin-bottom: .5em;
-	// 	}
-	// 	svg {
-	// 		transition: transform .35s ease;
-	// 		path {
-	// 			transition: .25s ease;
-	// 		}
-	// 	}
-	// 	&:hover {
-	// 		.h3 {
-	// 			text-decoration: underline;
-	// 		}
-	// 		svg {
-	// 			transform: translateX(23px);
-	// 			path {
-	// 				fill: $color-red;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-}
-
-article.post,
-article.event-cpt {
-	svg {
-		transition: transform .25s ease;
-		&:not(.recent-arrow) {
-			path {
-				transition: all .25s ease;
+		a.archive-permalink {
+			&:hover {
+				svg path {
+					fill: $color-red;
+				}
 			}
 		}
 	}
-	a.archive-permalink {
-		&:hover {
-			svg path {
-				fill: $color-red;
+	
+	article.post {
+		.img-wrap .inner {
+			@include breakpoint(mobile down) {
+				margin-bottom: rem-calc(15.5);
 			}
 		}
 	}
-}
-
-article.post {
-	.img-wrap .inner {
-		@include breakpoint(mobile down) {
-			margin-bottom: rem-calc(15.5);
-		}
-	}
-}
-
-article.event-cpt {
-	.date {
-		margin-bottom: .64rem;
-		@include breakpoint(mobile down) {
-			padding-top: 1rem;
+	
+	article.type-post,
+	article.event-cpt {
+		.date {
+			margin-bottom: .64rem;
+			@include breakpoint(mobile down) {
+				padding-top: 1rem;
+			}
 		}
 	}
 }
