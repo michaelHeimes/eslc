@@ -33,13 +33,13 @@
 	}	
 	.ngp-form.at {
 		legend.at-legend {
-			margin-left: 0;
-			margin-right: 0;
+			// margin-left: 0;
+			// margin-right: 0;
 		}
 		.at-row {
 			align-items: center;
 			>[class^=at-] {
-				margin: 0 1rem;
+				// margin: 0 1rem;
 				flex: 1 1 100%;
 				@include breakpoint(medium) {
 					flex: 1;
@@ -49,14 +49,19 @@
 				margin-left: 16px;
 			}
 		}
-		.at-fields {
-			position: relative;
-			margin-left: -1rem;
-			margin-right: -1rem;
-		}
+		// .at-fields {
+		// 	position: relative;
+		// 	margin-left: -1rem;
+		// 	margin-right: -1rem;
+		// 	table {
+		// 		margin-left: 1rem;
+		// 		margin-right: 1rem;
+		// 		width: calc(100% - 2rem);
+		// 	}
+		// }
 		.at-fieldset {
-			padding-left: 0;
-			padding-right: 0;
+			// padding-left: 0;
+			// padding-right: 0;
 		}
 		.at-row>.Prefix {
 			min-width: 100px;

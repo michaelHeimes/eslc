@@ -53,7 +53,7 @@
             "name": "form_embed_form_code",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "Remove all code that calls form css.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -106,5 +106,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719091638
+    "modified": 1722456813
 }
