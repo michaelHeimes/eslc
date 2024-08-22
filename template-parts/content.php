@@ -23,7 +23,9 @@ $post_type = get_post_type();
 						<?php if( $post_type == 'event-cpt' ) {
 							$event_date_string = get_field('event_date') ?? null;
 							$event_date = DateTime::createFromFormat( 'Ymd', $event_date_string );
-							echo $event_date->format( 'F j, Y' );
+							if( !empty($event_date) ) {
+								echo $event_date->format( 'F j, Y' );
+							}
 						} else {
 							echo get_the_date('F j, Y');
 						}

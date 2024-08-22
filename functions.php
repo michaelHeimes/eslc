@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 /**
@@ -161,33 +161,32 @@ function trailhead_scripts() {
 	
 	wp_enqueue_script( 'app-js', get_template_directory_uri() . '/assets/scripts/app.min.js', array('jquery'), _S_VERSION, true );
 	
-	//wp_enqueue_script( 'trailhead-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'trailhead_scripts' );
 
-
 /**
  * Enqueue Google Fonts.
  */
-wp_enqueue_style( 'dmc-', 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Francois+One&display=swap', array(), _S_VERSION, );
- 
- function google_font_loader_tag_filter( $html, $handle ) {
-	 if ( $handle === 'dmc-' ) {
-		 $rel_preconnect = "rel='stylesheet preconnect'";
- 
-		 return str_replace(
-			 "rel='stylesheet'",
-			 $rel_preconnect,
-			 $html
-		 );
-	 }
-	 return $html;
- }
- add_filter( 'style_loader_tag', 'google_font_loader_tag_filter', 10, 2 );
+function enqueue_google_fonts() {
+	wp_enqueue_style( 'dmc-google-fonts', 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Francois+One&display=swap', array(), null );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_google_fonts' );
+
+/**
+ * Modify Google Fonts enqueue to include preconnect.
+ */
+function google_font_loader_tag_filter( $html, $handle ) {
+	if ( $handle === 'dmc-google-fonts' ) {
+		$rel_preconnect = "rel='stylesheet preconnect'";
+		return str_replace( "rel='stylesheet'", $rel_preconnect, $html );
+	}
+	return $html;
+}
+add_filter( 'style_loader_tag', 'google_font_loader_tag_filter', 10, 2 );
+
 
 
 // Disable Tabelpress Stylesheet

@@ -89,11 +89,11 @@
 			}
 		}
 	}
-	p a {
+	a:not(.button) {
 		color: $color-blue;
 		text-decoration: underline;
 		&:hover {
-			text-decoration: none;
+			text-decoration: none !important;
 		}
 	}
 	h2 {
@@ -113,17 +113,23 @@
 		}
 	}
 	&.bg-white {
+		h1,
 		h2 {
 			color: $color-green;
 		}
-		h3 {
+		h3
+		h4,
+		h5 {
 			color: $color-brown;
 		}
 	}
 	&.bg-tan {
 		p a,
+		h1,
 		h2,
-		h3 {
+		h3,
+		h4,
+		h5 {
 			color: $color-dark-brown;
 		}
 	}
@@ -132,13 +138,17 @@
 	&.bg-dark-green {
 		color: $white;
 		p a,
+		h1,
 		h2,
-		h3 {
+		h3
+		h4,
+		h5 {
 			color: $white;
 		}
-		p a,
+		a:not(.button),
 		.cta-link a {
 			color: $white;
+			text-decoration: underline;
 		}
 		a.button {
 			@extend .btn-tan;	
